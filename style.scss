@@ -10,16 +10,22 @@ $bluetext: #66C7E5;
 
 // Desktop
 body {
+    background-image: url("./img/Background_Luminex.png");
+    background-color: black;
     nav {
         background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 60%;
+        gap: 50%;
+        height: 15ch;
+        margin-top: -1ch;
+        width: 100%;
         // Company Name
         .co_name_logo {
             // just for margining
-            margin: 0 0 0 -20ch;
+            margin: 0 0 0 -43ch;
+            margin: 0 0 0 -33ch;
             .logo_name {
                 display: flex;
                 justify-content: center;
@@ -42,7 +48,7 @@ body {
             display: flex;
             gap: 3ch;
             position: relative;
-            left: 12ch;
+            left: 15ch;
             // margin: 0 0 0 -7ch;
             // Home
             .home {
@@ -76,6 +82,49 @@ body {
                     font-family: 'Inter', sans-serif;
                     font-size: 1.3rem;
                     text-decoration: none;
+                }
+            }
+        }
+    }
+    // Home Page
+    .lumin_stuff {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .header_luminex {
+            margin: 15ch 0 0 10ch;
+            display: flex;
+            gap: 15ch;
+            .head_pic {
+                margin: 0 0 0 -32ch;
+                #ceiling_lights {
+                    width: 33vw;
+                    height: 14vw;
+                }
+            }
+            .headline {
+                background-color: black;
+                // background-color: rgb(7, 7, 83);
+                padding: 3em 0em 0em 5em;
+                border-radius: 10px;
+                width: 35vw;
+                // height: 14vw;
+                position: relative;
+                left: 40px;
+                .head_words {
+                    margin: 0 0 0 7ch;
+                    p {
+                        color: $bluetext;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        width: 73%;
+                        
+                    }
+                    ul {
+                        border: 3px solid white;
+                        width: 23vw;
+                    }
                 }
             }
         }
