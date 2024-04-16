@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
+body nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+}
+body nav .co_name_logo {
+  margin: 0 0 0 -20ch;
+}
+body nav .co_name_logo .logo_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav .co_name_logo .logo_name #lightbulb {
+  width: 1.4em;
+  height: 1.4em;
+}
+body nav .co_name_logo .logo_name p {
+  color: #DAD3D3;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+body nav .nav_links {
+  display: flex;
+  gap: 3ch;
+  position: relative;
+  left: 12ch;
+}
+body nav .nav_links .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1ch;
+}
+body nav .nav_links .home #home {
+  width: 1.5em;
+  height: 1.5em;
+}
+body nav .nav_links .home a {
+  color: #DAD3D3;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+body nav .nav_links .summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1ch;
+}
+body nav .nav_links .summary #summary {
+  width: 1.5em;
+  height: 1.5em;
+}
+body nav .nav_links .summary a {
+  color: #DAD3D3;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

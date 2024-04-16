@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap');
+
+// COLORS
+$headerfont: #DAD3D3;
+$bluetext: #66C7E5;
+
+// Mobile
+
+// Tablet
+
+// Desktop
+body {
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60%;
+        // Company Name
+        .co_name_logo {
+            // just for margining
+            margin: 0 0 0 -20ch;
+            .logo_name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // margin: 0 0 0 -15ch;
+                #lightbulb {
+                    width: 1.4em;
+                    height: 1.4em;
+                }
+                p {
+                    color: $headerfont;
+                    color: white;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        // Nav Links
+        .nav_links {
+            display: flex;
+            gap: 3ch;
+            position: relative;
+            left: 12ch;
+            // margin: 0 0 0 -7ch;
+            // Home
+            .home {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1ch;
+                #home {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+                a {
+                    color: $headerfont;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                }
+            }
+            // Summary
+            .summary {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1ch;
+                #summary {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+                a {
+                    color: $headerfont;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
