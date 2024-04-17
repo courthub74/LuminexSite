@@ -89,6 +89,7 @@ body {
     // Home Page
     .lumin_stuff {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         .header_luminex {
@@ -127,6 +128,15 @@ body {
                     }
                 }
             }
+        }
+        // Selections
+        .selections_luminex {
+            width: 80vw;
+            height: 25vh;
+            background-color: black;
+            // background-color: blue;
+            margin: 15ch 0 0 -19ch;
+            border-radius: 10px;
         }
     }
 }
