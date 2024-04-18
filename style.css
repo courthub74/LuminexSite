@@ -109,9 +109,17 @@ body .luminex_page .lumin_stuff .page_content .top_box .company_purpose .solutio
   color: #66C7E5;
   position: relative;
   left: 80px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-size: 1.8vw;
+  font-weight: bold;
+  width: 60%;
+  margin: 2em 0 0 0em;
 }
 body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
-  height: 3px solid white;
+  border: 3px solid white;
+  width: 25vw;
+  margin: 1ch 0 0 10.5ch;
 }
 body .luminex_page .lumin_stuff .page_content .bottom_box {
   display: flex;

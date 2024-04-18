@@ -136,13 +136,23 @@ body {
                             background-color: black;
                             border: 2px solid $borderfont;
                             border-radius: 10px;
+                            
                         .solutions {
                             color: $bluetext;
                             position: relative;
                             left: 80px;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 1.8rem;
+                            font-size: 1.8vw;
+                            font-weight: bold;
+                            width: 60%;
+                            margin: 2em 0 0 0em;
                         }
                         ul {
-                            height: 3px solid white;
+                            border: 3px solid white;
+                            width: 25vw;
+                            margin: 1ch 0 0 10.5ch;
+                            // height: 23vw;
                         }
                     }
                 }
