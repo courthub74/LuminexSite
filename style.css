@@ -5,6 +5,7 @@ body {
 body .luminex_page {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 body .luminex_page nav {
   background-color: black;
@@ -70,64 +71,12 @@ body .luminex_page nav .nav_links .summary a {
 }
 body .luminex_page .lumin_stuff {
   background-image: url("./img/Background_Luminex.png");
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
-body .luminex_page .lumin_stuff .lumin_content {
+body .luminex_page .lumin_stuff .page_content {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex {
-  margin: 12ch 0 0 -5ch;
-  margin: 12ch 0 0 0ch;
-  display: flex;
-  justify-content: center;
-  background-color: none;
-  width: 100%;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .head_pic #ceiling_lights {
-  width: 35vw;
-  width: 30vw;
-  height: 16vw;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  border-radius: 10px;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline {
-  background-color: black;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  padding: 3em 5em 0em 5em;
-  border-radius: 10px;
-  width: 30%;
-  position: relative;
-  left: 40px;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline .head_words {
-  margin: 0 0 0 3ch;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline .head_words p {
-  color: #66C7E5;
-  font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
-  font-size: 1.5vw;
-  font-weight: bold;
-  width: 80%;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline .head_words ul {
-  border: 3px solid white;
-  width: 23vw;
-}
-body .luminex_page .lumin_stuff .lumin_content .selections_luminex {
-  background-color: black;
-  height: 30vh;
-  width: 100%;
-  width: 71%;
-  margin: 10ch 0 0 4ch;
-  border-radius: 10px;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

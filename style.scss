@@ -22,6 +22,7 @@ body {
     .luminex_page {
         display: flex;
         flex-direction: column;
+        height: 100vh;
         // Navbar
         nav {
             background-color: black;
@@ -93,87 +94,15 @@ body {
         // Body of Page
         .lumin_stuff {
             background-image: url("./img/Background_Luminex.png");
-            // background: linear-gradient(45deg, 80%, black, white);
-            height: 100vh;
-            width: 100%;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
             align-items: center;
+            height: 100%;
             // Container for content
-            .lumin_content {
-                // All the Content
-                // set the width HERE
-                // background-color: #66C7E5;
+            .page_content {
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                // Top Line
-                .header_luminex {
-                    margin: 12ch 0 0 -5ch;
-                    margin: 12ch 0 0 0ch;
-                    display: flex;
-                    justify-content: center;
-                    // gap: 7ch;
-                    background-color: none;
-                    width: 100%;
-                    .head_pic {
-                        #ceiling_lights {
-                            width: 35vw;
-                            width: 30vw;
-                            height: 16vw;
-                            border: 2px solid $borderfont;
-                            border-radius: 10px;
-                        }
-                    }
-                    .headline {
-                        background-color: black;
-                        border: 2px solid $borderfont;
-                        // background-color: rgb(7, 7, 83);
-                        padding: 3em 5em 0em 5em;
-                        // padding: 3em 5em 0em 5em;
-                        border-radius: 10px;
-                        // width: 37vw;
-                        width: 30%;
-                        position: relative;
-                        left: 40px;
-                        .head_words {
-                            margin: 0 0 0 3ch;
-                            p {
-                                color: $bluetext;
-                                font-family: 'Inter', sans-serif;
-                                font-size: 1.8rem;
-                                font-size: 1.5vw;
-                                // font-size: 1.5rem;
-                                font-weight: bold;
-                                width: 80%;
-                                // padding: 3em 0em 0em 5em;
-                                
-                            }
-                            ul {
-                                border: 3px solid white;
-                                width: 23vw;
-                            }
-                        }
-                    }
-                }
-                // Bottom Line
-                .selections_luminex {
-                    background-color: black;
-                    height: 30vh;
-                    width: 100%;
-                    width: 71%;
-                    margin: 10ch 0 0 4ch;
-                    border-radius: 10px;
-                    border: 2px solid $borderfont;
-                    .selection_pics {
-                       
-                    }
-                }
-                
+                height: 100%;
+                // background-color: #66C7E5;
             }
         }
     }
