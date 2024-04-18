@@ -89,6 +89,19 @@ body {
                         text-decoration: none;
                     }
                 }
+                // Insights
+                .insights {
+                    position: relative;
+                    display: inline-block;
+                    .dropbtn {
+                        background-color: black;
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1rem;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
             }
         }
         // Body of Page
