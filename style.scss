@@ -22,6 +22,7 @@ body {
     .luminex_page {
         display: flex;
         flex-direction: column;
+        height: 100vh;
         // Navbar
         nav {
             background-color: black;
@@ -88,92 +89,182 @@ body {
                         text-decoration: none;
                     }
                 }
+                // Insights
+                .insights {
+                    position: relative;
+                    display: inline-block;
+                    .dropbtn {
+                        background-color: black;
+                        color: $headerfont;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1rem;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: black;
+                        min-width: 120px;
+                        min-height: 80px;
+                        border: 2px solid $borderfont;
+                        border-radius: 10px;
+                        // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: center;
+                        // align-items: center;
+                        // gap: 2ch;
+                        padding: 1em;
+                        // margin: 1em 0 0 0em;
+                        a {
+                            color: $headerfont;
+                            text-decoration: none;
+                            display: block;
+                            font-family: 'Inter', sans-serif;
+                            padding: .5em .1em;
+                        }
+                        a:hover {
+                            background-color: $borderfont;
+                            background-color: white;
+                            color: $bluetext;
+                            color: black;
+                            border-radius: 5px;
+                        }
+                      }
+                }
+                .insights:hover {
+                    .dropdown-content {
+                        display: block;
+                    }
+                }
             }
         }
         // Body of Page
         .lumin_stuff {
             background-image: url("./img/Background_Luminex.png");
-            // background: linear-gradient(45deg, 80%, black, white);
-            height: 100vh;
-            width: 100%;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
             align-items: center;
+            height: 100%;
+
             // Container for content
-            .lumin_content {
-                // All the Content
-                // set the width HERE
-                // background-color: #66C7E5;
+            .page_content {
                 width: 100%;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                // justify-content: center;
                 align-items: center;
-
-                // Top Line
-                .header_luminex {
-                    margin: 12ch 0 0 -5ch;
-                    margin: 12ch 0 0 0ch;
+                gap: 20ch;
+                margin: 15ch 0 0 0;
+                // background-color: #66C7E5;
+                .top_box {
+                    background-image: url("./img/Background_Luminex.png");
+                    // background-color: black;
+                    border-radius: 10px;
+                    width: 75%;
+                    height: 35%;
                     display: flex;
-                    justify-content: center;
-                    // gap: 7ch;
-                    background-color: none;
-                    width: 100%;
-                    .head_pic {
-                        #ceiling_lights {
-                            width: 35vw;
-                            width: 30vw;
-                            height: 16vw;
+                    align-items: center;
+                    // border: 2px solid $borderfont;
+                    .head_lights_img {
+                        // background-color: #66C7E5;
+                        // height: 100%;
+                        #head_lights {
+                            width: 68%;
+                            // height: 100%;
+                            // height: 20vw;
                             border: 2px solid $borderfont;
                             border-radius: 10px;
                         }
                     }
-                    .headline {
-                        background-color: black;
-                        border: 2px solid $borderfont;
-                        // background-color: rgb(7, 7, 83);
-                        padding: 3em 5em 0em 5em;
-                        // padding: 3em 5em 0em 5em;
-                        border-radius: 10px;
-                        // width: 37vw;
-                        width: 30%;
-                        position: relative;
-                        left: 40px;
-                        .head_words {
-                            margin: 0 0 0 3ch;
-                            p {
-                                color: $bluetext;
-                                font-family: 'Inter', sans-serif;
-                                font-size: 1.8rem;
-                                font-size: 1.5vw;
-                                // font-size: 1.5rem;
-                                font-weight: bold;
-                                width: 80%;
-                                // padding: 3em 0em 0em 5em;
-                                
-                            }
-                            ul {
-                                border: 3px solid white;
-                                width: 23vw;
-                            }
+                    .company_purpose {
+                            height: 100%;
+                            width: 60%;
+                            background-color: black;
+                            border: 2px solid $borderfont;
+                            border-radius: 10px;
+                            
+                        .solutions {
+                            color: $bluetext;
+                            position: relative;
+                            left: 80px;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 1.8rem;
+                            font-size: 1.6vw;
+                            font-weight: bold;
+                            width: 60%;
+                            margin: 2em 0 0 0em;
+                        }
+                        ul {
+                            border: 3px solid white;
+                            width: 25vw;
+                            margin: 1ch 0 0 10.5ch;
+                            // height: 23vw;
                         }
                     }
                 }
-                // Bottom Line
-                .selections_luminex {
+                
+                
+                .bottom_box {
+                    display: flex;
                     background-color: black;
-                    height: 30vh;
-                    width: 100%;
-                    width: 71%;
-                    margin: 10ch 0 0 4ch;
                     border-radius: 10px;
+                    width: 75%;
+                    height: 30%;
                     border: 2px solid $borderfont;
-                    .selection_pics {
-                       
+                    gap: 18ch;
+                    .pic_one {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 0 0 2.5ch;
+                        // for the dark pic under it
+                        // position: absolute;
+                        // width: 100%;
+                        #marketing_link {
+                            position: absolute;
+                            // display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 1.2rem;
+                            color: white;
+                            font-weight: bold;
+                            text-decoration: none;
+                            // background-color: #66C7E5;
+                            margin: 0 0 0 -0ch;
+                            // width: 100%;
+                        }
+                        #marketing_light {
+                            width: 120%;
+                            height: 100%;
+                        }
+                        #operations_light {
+                            width: 120%;
+                            height: 100%;
+                            margin-top: 1ch;
+                        }
+                        #office_lights {
+                            width: 120%;
+                            height: 100%;
+                            margin-top: 1ch;
+                        }
+                        #hand_light {
+                            width: 115%;
+                            height: 100%;
+                            margin-top: 1ch;
+                        }
+                        // ul {
+                        //     border: 3px solid $bluetext;
+                        //     width: 23ch;
+                        //     // margin-top: -2vh;
+                        // }
                     }
                 }
-                
             }
         }
     }

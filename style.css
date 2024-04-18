@@ -5,6 +5,7 @@ body {
 body .luminex_page {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 body .luminex_page nav {
   background-color: black;
@@ -68,66 +69,139 @@ body .luminex_page nav .nav_links .summary a {
   font-size: 1rem;
   text-decoration: none;
 }
+body .luminex_page nav .nav_links .insights {
+  position: relative;
+  display: inline-block;
+}
+body .luminex_page nav .nav_links .insights .dropbtn {
+  background-color: black;
+  color: #DAD3D3;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+body .luminex_page nav .nav_links .insights .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 120px;
+  min-height: 80px;
+  border: 2px solid rgba(218, 211, 211, 0.3568627451);
+  border-radius: 10px;
+  z-index: 1;
+  padding: 1em;
+}
+body .luminex_page nav .nav_links .insights .dropdown-content a {
+  color: #DAD3D3;
+  text-decoration: none;
+  display: block;
+  font-family: "Inter", sans-serif;
+  padding: 0.5em 0.1em;
+}
+body .luminex_page nav .nav_links .insights .dropdown-content a:hover {
+  background-color: rgba(218, 211, 211, 0.3568627451);
+  background-color: white;
+  color: #66C7E5;
+  color: black;
+  border-radius: 5px;
+}
+body .luminex_page nav .nav_links .insights:hover .dropdown-content {
+  display: block;
+}
 body .luminex_page .lumin_stuff {
   background-image: url("./img/Background_Luminex.png");
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
-body .luminex_page .lumin_stuff .lumin_content {
+body .luminex_page .lumin_stuff .page_content {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 20ch;
+  margin: 15ch 0 0 0;
+}
+body .luminex_page .lumin_stuff .page_content .top_box {
+  background-image: url("./img/Background_Luminex.png");
+  border-radius: 10px;
+  width: 75%;
+  height: 35%;
+  display: flex;
   align-items: center;
 }
-body .luminex_page .lumin_stuff .lumin_content .header_luminex {
-  margin: 12ch 0 0 -5ch;
-  margin: 12ch 0 0 0ch;
-  display: flex;
-  justify-content: center;
-  background-color: none;
-  width: 100%;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .head_pic #ceiling_lights {
-  width: 35vw;
-  width: 30vw;
-  height: 16vw;
+body .luminex_page .lumin_stuff .page_content .top_box .head_lights_img #head_lights {
+  width: 68%;
   border: 2px solid rgba(218, 211, 211, 0.3568627451);
   border-radius: 10px;
 }
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline {
+body .luminex_page .lumin_stuff .page_content .top_box .company_purpose {
+  height: 100%;
+  width: 60%;
   background-color: black;
   border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  padding: 3em 5em 0em 5em;
   border-radius: 10px;
-  width: 30%;
-  position: relative;
-  left: 40px;
 }
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline .head_words {
-  margin: 0 0 0 3ch;
-}
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline .head_words p {
+body .luminex_page .lumin_stuff .page_content .top_box .company_purpose .solutions {
   color: #66C7E5;
+  position: relative;
+  left: 80px;
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   font-weight: bold;
-  width: 80%;
+  width: 60%;
+  margin: 2em 0 0 0em;
 }
-body .luminex_page .lumin_stuff .lumin_content .header_luminex .headline .head_words ul {
+body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
   border: 3px solid white;
-  width: 23vw;
+  width: 25vw;
+  margin: 1ch 0 0 10.5ch;
 }
-body .luminex_page .lumin_stuff .lumin_content .selections_luminex {
+body .luminex_page .lumin_stuff .page_content .bottom_box {
+  display: flex;
   background-color: black;
-  height: 30vh;
-  width: 100%;
-  width: 71%;
-  margin: 10ch 0 0 4ch;
   border-radius: 10px;
+  width: 75%;
+  height: 30%;
   border: 2px solid rgba(218, 211, 211, 0.3568627451);
+  gap: 18ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 2.5ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #marketing_link {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 0 0ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #marketing_light {
+  width: 120%;
+  height: 100%;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #operations_light {
+  width: 120%;
+  height: 100%;
+  margin-top: 1ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #office_lights {
+  width: 120%;
+  height: 100%;
+  margin-top: 1ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #hand_light {
+  width: 115%;
+  height: 100%;
+  margin-top: 1ch;
 }/*# sourceMappingURL=style.css.map */
