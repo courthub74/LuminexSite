@@ -13,6 +13,9 @@ body .luminex_page nav {
   align-items: center;
   padding: 0 2em 0 2em;
 }
+body .luminex_page nav .co_name_logo {
+  margin: 0 0 0 10ch;
+}
 body .luminex_page nav .co_name_logo .logo_name {
   display: flex;
   justify-content: center;
@@ -32,6 +35,7 @@ body .luminex_page nav .nav_links {
   display: flex;
   gap: 3ch;
   position: relative;
+  right: 17ch;
 }
 body .luminex_page nav .nav_links .home {
   display: flex;
@@ -68,4 +72,41 @@ body .luminex_page nav .nav_links .summary a {
 body .luminex_page .lumin_stuff {
   background-image: url("./img/Background_Luminex.png");
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .luminex_page .lumin_stuff .header_luminex {
+  margin: 12ch 0 0 20ch;
+  display: flex;
+  gap: 20ch;
+}
+body .luminex_page .lumin_stuff .header_luminex .head_pic {
+  margin: 0 0 0 -32ch;
+}
+body .luminex_page .lumin_stuff .header_luminex .head_pic #ceiling_lights {
+  width: 30vw;
+  height: 15vw;
+}
+body .luminex_page .lumin_stuff .header_luminex .headline {
+  background-color: black;
+  padding: 3em 0em 0em 5em;
+  border-radius: 10px;
+  width: 32vw;
+  position: relative;
+  left: 40px;
+}
+body .luminex_page .lumin_stuff .header_luminex .headline .head_words {
+  margin: 0 0 0 7ch;
+}
+body .luminex_page .lumin_stuff .header_luminex .headline .head_words p {
+  color: #66C7E5;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 73%;
+}
+body .luminex_page .lumin_stuff .header_luminex .headline .head_words ul {
+  border: 3px solid white;
+  width: 23vw;
 }/*# sourceMappingURL=style.css.map */
