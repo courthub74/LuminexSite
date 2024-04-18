@@ -10,133 +10,85 @@ $bluetext: #66C7E5;
 
 // Desktop
 body {
-    background-image: url("./img/Background_Luminex.png");
-    background-color: black;
-    nav {
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50%;
-        height: 15ch;
-        margin-top: -1ch;
-        width: 100%;
-        // Company Name
-        .co_name_logo {
-            // just for margining
-            margin: 0 0 0 -43ch;
-            margin: 0 0 0 -33ch;
-            .logo_name {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // margin: 0 0 0 -15ch;
-                #lightbulb {
-                    width: 1.4em;
-                    height: 1.4em;
-                }
-                p {
-                    color: $headerfont;
-                    color: white;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        // Nav Links
-        .nav_links {
-            display: flex;
-            gap: 3ch;
-            position: relative;
-            left: 15ch;
-            // margin: 0 0 0 -7ch;
-            // Home
-            .home {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 1ch;
-                #home {
-                    width: 1.5em;
-                    height: 1.5em;
-                }
-                a {
-                    color: $headerfont;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 1.3rem;
-                    text-decoration: none;
-                }
-            }
-            // Summary
-            .summary {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 1ch;
-                #summary {
-                    width: 1.5em;
-                    height: 1.5em;
-                }
-                a {
-                    color: $headerfont;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 1.3rem;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    // Home Page
-    .lumin_stuff {
+    margin: 0;
+    // Whole Page
+    .luminex_page {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .header_luminex {
-            margin: 15ch 0 0 10ch;
+        // Navbar
+        nav {
+            background-color: black;
             display: flex;
-            gap: 15ch;
-            .head_pic {
-                margin: 0 0 0 -32ch;
-                #ceiling_lights {
-                    width: 33vw;
-                    height: 14vw;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2em 0 2em;
+            // Company Logo
+            .co_name_logo {
+                // Make this fixed within window
+                // margin: 0 0 0 -170ch;
+                .logo_name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    #lightbulb {
+                        width: 1.4em;
+                        height: 1.4em;
+                    }
+                    p {
+                        color: $headerfont;
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1.5rem;
+                    }
                 }
             }
-            .headline {
-                background-color: black;
-                // background-color: rgb(7, 7, 83);
-                padding: 3em 0em 0em 5em;
-                border-radius: 10px;
-                width: 35vw;
-                // height: 14vw;
+            // Nav Links
+            .nav_links {
+                display: flex;
+                gap: 3ch;
                 position: relative;
-                left: 40px;
-                .head_words {
-                    margin: 0 0 0 7ch;
-                    p {
-                        color: $bluetext;
-                        font-family: 'Inter', sans-serif;
-                        font-size: 2rem;
-                        font-weight: bold;
-                        width: 73%;
-                        
+                // left: 10ch;
+                // Home
+                .home {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1ch;
+                    #home {
+                        width: 1.5em;
+                        height: 1.5em;
                     }
-                    ul {
-                        border: 3px solid white;
-                        width: 23vw;
+                    a {
+                        color: $headerfont;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1rem;
+                        text-decoration: none;
+                    }
+                }
+                // Summary
+                .summary {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1ch;
+                    #summary {
+                        width: 1.5em;
+                        height: 1.5em;
+                    }
+                    a {
+                        color: $headerfont;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1rem;
+                        text-decoration: none;
                     }
                 }
             }
         }
-        // Selections
-        .selections_luminex {
-            width: 80vw;
-            height: 25vh;
-            background-color: black;
-            // background-color: blue;
-            margin: 15ch 0 0 -19ch;
-            border-radius: 10px;
+        // Body of Page
+        .lumin_stuff {
+            background-image: url("./img/Background_Luminex.png");
+            // background: linear-gradient(45deg, 80%, black, white);
+            height: 100vh;
         }
     }
 }

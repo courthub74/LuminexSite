@@ -1,119 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
 body {
-  background-image: url("./img/Background_Luminex.png");
-  background-color: black;
+  margin: 0;
 }
-body nav {
+body .luminex_page {
+  display: flex;
+  flex-direction: column;
+}
+body .luminex_page nav {
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50%;
-  height: 15ch;
-  margin-top: -1ch;
-  width: 100%;
+  padding: 0 2em 0 2em;
 }
-body nav .co_name_logo {
-  margin: 0 0 0 -43ch;
-  margin: 0 0 0 -33ch;
-}
-body nav .co_name_logo .logo_name {
+body .luminex_page nav .co_name_logo .logo_name {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body nav .co_name_logo .logo_name #lightbulb {
+body .luminex_page nav .co_name_logo .logo_name #lightbulb {
   width: 1.4em;
   height: 1.4em;
 }
-body nav .co_name_logo .logo_name p {
+body .luminex_page nav .co_name_logo .logo_name p {
   color: #DAD3D3;
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
 }
-body nav .nav_links {
+body .luminex_page nav .nav_links {
   display: flex;
   gap: 3ch;
   position: relative;
-  left: 15ch;
 }
-body nav .nav_links .home {
+body .luminex_page nav .nav_links .home {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1ch;
 }
-body nav .nav_links .home #home {
+body .luminex_page nav .nav_links .home #home {
   width: 1.5em;
   height: 1.5em;
 }
-body nav .nav_links .home a {
+body .luminex_page nav .nav_links .home a {
   color: #DAD3D3;
   font-family: "Inter", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-decoration: none;
 }
-body nav .nav_links .summary {
+body .luminex_page nav .nav_links .summary {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1ch;
 }
-body nav .nav_links .summary #summary {
+body .luminex_page nav .nav_links .summary #summary {
   width: 1.5em;
   height: 1.5em;
 }
-body nav .nav_links .summary a {
+body .luminex_page nav .nav_links .summary a {
   color: #DAD3D3;
   font-family: "Inter", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-decoration: none;
 }
-body .lumin_stuff {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .lumin_stuff .header_luminex {
-  margin: 15ch 0 0 10ch;
-  display: flex;
-  gap: 15ch;
-}
-body .lumin_stuff .header_luminex .head_pic {
-  margin: 0 0 0 -32ch;
-}
-body .lumin_stuff .header_luminex .head_pic #ceiling_lights {
-  width: 33vw;
-  height: 14vw;
-}
-body .lumin_stuff .header_luminex .headline {
-  background-color: black;
-  padding: 3em 0em 0em 5em;
-  border-radius: 10px;
-  width: 35vw;
-  position: relative;
-  left: 40px;
-}
-body .lumin_stuff .header_luminex .headline .head_words {
-  margin: 0 0 0 7ch;
-}
-body .lumin_stuff .header_luminex .headline .head_words p {
-  color: #66C7E5;
-  font-family: "Inter", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 73%;
-}
-body .lumin_stuff .header_luminex .headline .head_words ul {
-  border: 3px solid white;
-  width: 23vw;
-}
-body .lumin_stuff .selections_luminex {
-  width: 80vw;
-  height: 25vh;
-  background-color: black;
-  margin: 15ch 0 0 -19ch;
-  border-radius: 10px;
+body .luminex_page .lumin_stuff {
+  background-image: url("./img/Background_Luminex.png");
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
