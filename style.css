@@ -114,9 +114,46 @@ body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
   height: 3px solid white;
 }
 body .luminex_page .lumin_stuff .page_content .bottom_box {
+  display: flex;
   background-color: black;
   border-radius: 10px;
   width: 75%;
   height: 30%;
   border: 2px solid rgba(218, 211, 211, 0.3568627451);
+  gap: 18ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 2.5ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #marketing_link {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 0 0ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #marketing_light {
+  width: 120%;
+  height: 100%;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #operations_light {
+  width: 120%;
+  height: 100%;
+  margin-top: 1ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #office_lights {
+  width: 120%;
+  height: 100%;
+  margin-top: 1ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #hand_light {
+  width: 115%;
+  height: 100%;
+  margin-top: 1ch;
 }/*# sourceMappingURL=style.css.map */
