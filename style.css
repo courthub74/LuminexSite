@@ -75,11 +75,39 @@ body .luminex_page nav .nav_links .insights {
 }
 body .luminex_page nav .nav_links .insights .dropbtn {
   background-color: black;
-  color: white;
+  color: #DAD3D3;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+body .luminex_page nav .nav_links .insights .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 120px;
+  min-height: 80px;
+  border: 2px solid rgba(218, 211, 211, 0.3568627451);
+  border-radius: 10px;
+  z-index: 1;
+  padding: 1em;
+}
+body .luminex_page nav .nav_links .insights .dropdown-content a {
+  color: #DAD3D3;
+  text-decoration: none;
+  display: block;
+  font-family: "Inter", sans-serif;
+  padding: 0.5em 0.1em;
+}
+body .luminex_page nav .nav_links .insights .dropdown-content a:hover {
+  background-color: rgba(218, 211, 211, 0.3568627451);
+  background-color: white;
+  color: #66C7E5;
+  color: black;
+  border-radius: 5px;
+}
+body .luminex_page nav .nav_links .insights:hover .dropdown-content {
+  display: block;
 }
 body .luminex_page .lumin_stuff {
   background-image: url("./img/Background_Luminex.png");
