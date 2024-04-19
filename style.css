@@ -191,9 +191,15 @@
     width: 100%;
     height: 38%;
     border: 2px solid rgba(218, 211, 211, 0.3568627451);
+    gap: 10ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing {
     background-image: url("./img/marketing_light.png");
+    height: 100%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line {
     display: flex;
@@ -214,6 +220,12 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations {
     background-image: url("./img/screwing light.png");
+    height: 98%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line {
     display: flex;
@@ -234,6 +246,12 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental {
     background-image: url("./img/office_lights.png");
+    height: 98%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line {
     display: flex;
@@ -254,6 +272,12 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons {
     background-image: url("./img/hand_light.png");
+    height: 98%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line {
     display: flex;

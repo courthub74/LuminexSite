@@ -240,11 +240,19 @@ $borderfont: #dad3d35b;
                         width: 100%;
                         height: 38%;
                         border: 2px solid $borderfont;
-                        // gap: 10ch;
+                        gap: 10ch;
 
                         // Marketing
                         .marketing {
                             background-image: url("./img/marketing_light.png");
+                            // padding: 5em 1em 5em 1em;
+                            // width: 100%;
+                            height: 100%;
+                            width: 17%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // margin-top: 2ch;
                             .link_line {
                                 display: flex;
                                 flex-direction: column;
@@ -266,6 +274,12 @@ $borderfont: #dad3d35b;
                         // Operations
                         .operations {
                             background-image: url("./img/screwing\ light.png");
+                            height: 98%;
+                            width: 17%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 1ch;
                             .link_line {
                                 display: flex;
                                 flex-direction: column;
@@ -287,6 +301,12 @@ $borderfont: #dad3d35b;
                         // Environmental
                         .environmental {
                             background-image: url("./img/office_lights.png");
+                            height: 98%;
+                            width: 17%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 1ch;
                             .link_line {
                                 display: flex;
                                 flex-direction: column;
@@ -308,6 +328,12 @@ $borderfont: #dad3d35b;
                         // Pros and Cons
                         .pros_cons {
                             background-image: url("./img/hand_light.png");
+                            height: 98%;
+                            width: 17%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 1ch;
                             .link_line {
                                 display: flex;
                                 flex-direction: column;
