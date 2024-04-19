@@ -155,12 +155,17 @@
   }
   body .luminex_page .lumin_stuff .page_content .top_box .head_lights_img #head_lights {
     width: 68%;
+    width: 78%;
     border: 2px solid rgba(218, 211, 211, 0.3568627451);
     border-radius: 10px;
   }
   body .luminex_page .lumin_stuff .page_content .top_box .company_purpose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 60%;
+    width: 80%;
     background-color: black;
     border: 2px solid rgba(218, 211, 211, 0.3568627451);
     border-radius: 10px;
@@ -168,18 +173,20 @@
   body .luminex_page .lumin_stuff .page_content .top_box .company_purpose .solutions {
     color: #66C7E5;
     position: relative;
-    left: 80px;
+    left: 85px;
     font-family: "Inter", sans-serif;
     font-size: 1.8rem;
     font-size: 1.6vw;
     font-weight: bold;
+    line-height: 0.2em;
     width: 60%;
-    margin: 2em 0 0 0em;
+    width: 100%;
+    margin: 0em 0 0 0em;
   }
   body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
     border: 3px solid white;
     width: 25vw;
-    margin: 1ch 0 0 10.5ch;
+    margin: 1vw 0 0 -4vw;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box {
     display: flex;
@@ -203,6 +210,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line a {
@@ -214,9 +223,14 @@
     text-decoration: none;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line ul {
+    opacity: 0;
     border: 2px solid #66C7E5;
     width: 6vw;
-    margin-top: 3ch;
+    margin: 4ch 0 0 4ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line:hover ul {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations {
     background-image: url("./img/screwing light.png");
@@ -229,6 +243,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line a {
@@ -240,9 +256,15 @@
     text-decoration: none;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line ul {
+    opacity: 0;
     border: 2px solid #66C7E5;
     width: 6vw;
     margin-top: 3ch;
+    margin: 4ch 0 0 4ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line:hover ul {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental {
     background-image: url("./img/office_lights.png");
@@ -255,6 +277,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line a {
@@ -266,9 +290,15 @@
     text-decoration: none;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line ul {
+    opacity: 0;
     border: 2px solid #66C7E5;
-    width: 6vw;
+    width: 7.5vw;
     margin-top: 3ch;
+    margin: 4ch 0 0 4ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line:hover ul {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons {
     background-image: url("./img/hand_light.png");
@@ -281,6 +311,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line a {
@@ -292,8 +324,14 @@
     text-decoration: none;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line ul {
+    opacity: 0;
     border: 2px solid #66C7E5;
-    width: 6vw;
+    width: 7.5vw;
     margin-top: 3ch;
+    margin: 4ch 0 0 4ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line:hover ul {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
 }/*# sourceMappingURL=style.css.map */

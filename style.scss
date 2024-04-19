@@ -196,6 +196,7 @@ $borderfont: #dad3d35b;
                             // height: 100%;
                             #head_lights {
                                 width: 68%;
+                                width: 78%;
                                 // height: 100%;
                                 // height: 20vw;
                                 border: 2px solid $borderfont;
@@ -203,27 +204,33 @@ $borderfont: #dad3d35b;
                             }
                         }
                         .company_purpose {
-                                height: 100%;
-                                width: 60%;
-                                background-color: black;
-                                border: 2px solid $borderfont;
-                                border-radius: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            width: 80%;
+                            background-color: black;
+                            border: 2px solid $borderfont;
+                            border-radius: 10px;
                                 
                             .solutions {
                                 color: $bluetext;
                                 position: relative;
-                                left: 80px;
+                                left: 85px;
                                 font-family: 'Inter', sans-serif;
                                 font-size: 1.8rem;
                                 font-size: 1.6vw;
                                 font-weight: bold;
+                                line-height: .2em;
                                 width: 60%;
-                                margin: 2em 0 0 0em;
+                                width: 100%;
+                                margin: 0em 0 0 0em;
                             }
                             ul {
                                 border: 3px solid white;
                                 width: 25vw;
-                                margin: 1ch 0 0 10.5ch;
+                                margin: 1vw 0 0 -4vw;
                                 // height: 23vw;
                             }
                         }
@@ -255,6 +262,8 @@ $borderfont: #dad3d35b;
                             // margin-top: 2ch;
                             .link_line {
                                 display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 flex-direction: column;
                                 a {
                                     position: absolute;
@@ -265,9 +274,16 @@ $borderfont: #dad3d35b;
                                     text-decoration: none;
                                 }
                                 ul {
+                                    opacity: 0;
                                     border: 2px solid $bluetext;
                                     width: 6vw;
-                                    margin-top: 3ch;
+                                    margin: 4ch 0 0 4ch;
+                                }
+                            }
+                            .link_line:hover {
+                                ul {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
                                 }
                             }
                         }
@@ -282,6 +298,8 @@ $borderfont: #dad3d35b;
                             margin-top: 1ch;
                             .link_line {
                                 display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 flex-direction: column;
                                 a {
                                     position: absolute;
@@ -292,9 +310,17 @@ $borderfont: #dad3d35b;
                                     text-decoration: none;
                                 }
                                 ul {
+                                    opacity: 0;
                                     border: 2px solid $bluetext;
                                     width: 6vw;
                                     margin-top: 3ch;
+                                    margin: 4ch 0 0 4ch;
+                                }
+                            }
+                            .link_line:hover {
+                                ul {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
                                 }
                             }
                         }
@@ -309,6 +335,8 @@ $borderfont: #dad3d35b;
                             margin-top: 1ch;
                             .link_line {
                                 display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 flex-direction: column;
                                 a {
                                     position: absolute;
@@ -319,9 +347,17 @@ $borderfont: #dad3d35b;
                                     text-decoration: none;
                                 }
                                 ul {
+                                    opacity: 0;
                                     border: 2px solid $bluetext;
-                                    width: 6vw;
+                                    width: 7.5vw;
                                     margin-top: 3ch;
+                                    margin: 4ch 0 0 4ch;
+                                }
+                            }
+                            .link_line:hover {
+                                ul {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
                                 }
                             }
                         }
@@ -336,6 +372,8 @@ $borderfont: #dad3d35b;
                             margin-top: 1ch;
                             .link_line {
                                 display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 flex-direction: column;
                                 a {
                                     position: absolute;
@@ -346,9 +384,17 @@ $borderfont: #dad3d35b;
                                     text-decoration: none;
                                 }
                                 ul {
+                                    opacity: 0;
                                     border: 2px solid $bluetext;
-                                    width: 6vw;
+                                    width: 7.5vw;
                                     margin-top: 3ch;
+                                    margin: 4ch 0 0 4ch;
+                                }
+                            }
+                            .link_line:hover {
+                                ul {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
                                 }
                             }
                         }
