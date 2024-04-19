@@ -247,7 +247,7 @@ $borderfont: #dad3d35b;
                         // width: 100%;
                         height: 38%;
                         border: 2px solid $borderfont;
-                        gap: 2ch;
+                        gap: 5ch;
                         // position: absolute;
                         // Marketing
                         .marketing {
@@ -256,8 +256,8 @@ $borderfont: #dad3d35b;
                             justify-content: center;
                             align-items: center;
                             border-radius: 10px;
-                            
-                           
+                            height: 70%;
+                            width: 20%;
                             .link_line {
                                 display: flex;
                                 justify-content: center;
@@ -274,8 +274,8 @@ $borderfont: #dad3d35b;
                                 ul {
                                     opacity: 0;
                                     border: 2px solid $bluetext;
-                                    width: 6vw;
-                                    margin: 4ch 0 0 4ch;
+                                    width: 5vw;
+                                    margin: 4ch 0 0 3ch;
                                 }
                             }
                             .link_line:hover {
@@ -287,8 +287,9 @@ $borderfont: #dad3d35b;
                         }
                         // Operations
                         .operations {
-                            background-image: url("./img/screwing\ light.png");
-                            
+                            background-image: url("./img/screwing light.png");
+                            height: 70%;
+                            width: 20%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -310,9 +311,9 @@ $borderfont: #dad3d35b;
                                 ul {
                                     opacity: 0;
                                     border: 2px solid $bluetext;
-                                    width: 6vw;
+                                    width: 5vw;
                                     margin-top: 3ch;
-                                    margin: 4ch 0 0 4ch;
+                                    margin: 4ch 0 0 2ch;
                                 }
                             }
                             .link_line:hover {
@@ -325,7 +326,8 @@ $borderfont: #dad3d35b;
                         // Environmental
                         .environmental {
                             background-image: url("./img/office_lights.png");
-                           
+                            height: 70%;
+                            width: 20%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -349,7 +351,7 @@ $borderfont: #dad3d35b;
                                     border: 2px solid $bluetext;
                                     width: 7.5vw;
                                     margin-top: 3ch;
-                                    margin: 4ch 0 0 4ch;
+                                    margin: 4ch 0 0 2ch;
                                 }
                             }
                             .link_line:hover {
@@ -362,7 +364,8 @@ $borderfont: #dad3d35b;
                         // Pros and Cons
                         .pros_cons {
                             background-image: url("./img/hand_light.png");
-                           
+                            height: 70%;
+                            width: 20%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -384,9 +387,9 @@ $borderfont: #dad3d35b;
                                 ul {
                                     opacity: 0;
                                     border: 2px solid $bluetext;
-                                    width: 7.5vw;
+                                    width: 7vw;
                                     margin-top: 3ch;
-                                    margin: 4ch 0 0 4ch;
+                                    margin: 4ch 0 0 2ch;
                                 }
                             }
                             .link_line:hover {

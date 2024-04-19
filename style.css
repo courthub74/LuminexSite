@@ -197,7 +197,7 @@
     width: 75%;
     height: 38%;
     border: 2px solid rgba(218, 211, 211, 0.3568627451);
-    gap: 2ch;
+    gap: 5ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing {
     background-image: url("./img/marketing_light.png");
@@ -205,6 +205,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    height: 70%;
+    width: 20%;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line {
     display: flex;
@@ -223,8 +225,8 @@
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line ul {
     opacity: 0;
     border: 2px solid #66C7E5;
-    width: 6vw;
-    margin: 4ch 0 0 4ch;
+    width: 5vw;
+    margin: 4ch 0 0 3ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line:hover ul {
     opacity: 1;
@@ -232,6 +234,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations {
     background-image: url("./img/screwing light.png");
+    height: 70%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,9 +259,9 @@
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line ul {
     opacity: 0;
     border: 2px solid #66C7E5;
-    width: 6vw;
+    width: 5vw;
     margin-top: 3ch;
-    margin: 4ch 0 0 4ch;
+    margin: 4ch 0 0 2ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line:hover ul {
     opacity: 1;
@@ -265,6 +269,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental {
     background-image: url("./img/office_lights.png");
+    height: 70%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,7 +296,7 @@
     border: 2px solid #66C7E5;
     width: 7.5vw;
     margin-top: 3ch;
-    margin: 4ch 0 0 4ch;
+    margin: 4ch 0 0 2ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line:hover ul {
     opacity: 1;
@@ -298,6 +304,8 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons {
     background-image: url("./img/hand_light.png");
+    height: 70%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,9 +329,9 @@
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line ul {
     opacity: 0;
     border: 2px solid #66C7E5;
-    width: 7.5vw;
+    width: 7vw;
     margin-top: 3ch;
-    margin: 4ch 0 0 4ch;
+    margin: 4ch 0 0 2ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line:hover ul {
     opacity: 1;
