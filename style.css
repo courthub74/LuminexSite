@@ -1,236 +1,275 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
-body {
-  margin: 0;
+@media only screen and (max-width: 600px), (orientation: portrait) {
+  body {
+    background-color: black;
+    margin: 0;
+  }
+  body .luminex_page {
+    display: none;
+  }
 }
-body .luminex_page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+@media only screen and (min-width: 601px), (orientation: landscape) {
+  body {
+    background-color: darkblue;
+    margin: 0;
+  }
+  body .luminex_page {
+    display: none;
+  }
 }
-body .luminex_page nav {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body .luminex_page nav .co_name_logo {
-  margin: 0 0 0 10ch;
-}
-body .luminex_page nav .co_name_logo .logo_name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page nav .co_name_logo .logo_name #lightbulb {
-  width: 1.4em;
-  height: 1.4em;
-}
-body .luminex_page nav .co_name_logo .logo_name p {
-  color: #DAD3D3;
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-}
-body .luminex_page nav .nav_links {
-  display: flex;
-  gap: 3ch;
-  position: relative;
-  right: 17ch;
-}
-body .luminex_page nav .nav_links .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1ch;
-}
-body .luminex_page nav .nav_links .home #home {
-  width: 1.5em;
-  height: 1.5em;
-}
-body .luminex_page nav .nav_links .home a {
-  color: #DAD3D3;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-}
-body .luminex_page nav .nav_links .summary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1ch;
-}
-body .luminex_page nav .nav_links .summary #summary {
-  width: 1.5em;
-  height: 1.5em;
-}
-body .luminex_page nav .nav_links .summary a {
-  color: #DAD3D3;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-}
-body .luminex_page nav .nav_links .insights {
-  position: relative;
-  display: inline-block;
-}
-body .luminex_page nav .nav_links .insights .dropbtn {
-  background-color: black;
-  color: #DAD3D3;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
-body .luminex_page nav .nav_links .insights .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 120px;
-  min-height: 80px;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  border-radius: 10px;
-  z-index: 1;
-  padding: 1em;
-}
-body .luminex_page nav .nav_links .insights .dropdown-content a {
-  color: #DAD3D3;
-  text-decoration: none;
-  display: block;
-  font-family: "Inter", sans-serif;
-  padding: 0.5em 0.1em;
-}
-body .luminex_page nav .nav_links .insights .dropdown-content a:hover {
-  background-color: rgba(218, 211, 211, 0.3568627451);
-  background-color: white;
-  color: #66C7E5;
-  color: black;
-  border-radius: 5px;
-}
-body .luminex_page nav .nav_links .insights:hover .dropdown-content {
-  display: block;
-}
-body .luminex_page .lumin_stuff {
-  background-image: url("./img/Background_Luminex.png");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-body .luminex_page .lumin_stuff .page_content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20ch;
-  margin: 15ch 0 0 0;
-}
-body .luminex_page .lumin_stuff .page_content .top_box {
-  background-image: url("./img/Background_Luminex.png");
-  border-radius: 10px;
-  width: 75%;
-  height: 35%;
-  display: flex;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .page_content .top_box .head_lights_img #head_lights {
-  width: 68%;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  border-radius: 10px;
-}
-body .luminex_page .lumin_stuff .page_content .top_box .company_purpose {
-  height: 100%;
-  width: 60%;
-  background-color: black;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  border-radius: 10px;
-}
-body .luminex_page .lumin_stuff .page_content .top_box .company_purpose .solutions {
-  color: #66C7E5;
-  position: relative;
-  left: 80px;
-  font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
-  font-size: 1.6vw;
-  font-weight: bold;
-  width: 60%;
-  margin: 2em 0 0 0em;
-}
-body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
-  border: 3px solid white;
-  width: 25vw;
-  margin: 1ch 0 0 10.5ch;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  border-radius: 10px;
-  width: 75%;
-  height: 30%;
-  border: 2px solid rgba(218, 211, 211, 0.3568627451);
-  gap: 18ch;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one {
-  background-image: url("./img/marketing_light.png");
-  width: 18%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box #marketing_link:hover ul {
-  border: 2px solid #66C7E5;
-  width: 4vw;
-  margin-top: -0.1ch;
-  margin-left: 2ch;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_two {
-  background-image: url("./img/screwing light.png");
-  width: 18%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_three {
-  background-image: url("./img/office_lights.png");
-  width: 18%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_three {
-  background-image: url("./img/office_lights.png");
-  width: 18%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_four {
-  background-image: url("./img/office_lights.png");
-  width: 18%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box a {
-  position: absolute;
-  font-family: "Inter", sans-serif;
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box ul {
-  display: none;
+@media only screen and (min-width: 1200px) {
+  body {
+    margin: 0;
+  }
+  body .luminex_page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  body .luminex_page nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .luminex_page nav .co_name_logo {
+    margin: 0 0 0 10ch;
+  }
+  body .luminex_page nav .co_name_logo .logo_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .luminex_page nav .co_name_logo .logo_name #lightbulb {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  body .luminex_page nav .co_name_logo .logo_name p {
+    color: #DAD3D3;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+  }
+  body .luminex_page nav .nav_links {
+    display: flex;
+    gap: 3ch;
+    position: relative;
+    right: 17ch;
+  }
+  body .luminex_page nav .nav_links .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1ch;
+  }
+  body .luminex_page nav .nav_links .home #home {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  body .luminex_page nav .nav_links .home a {
+    color: #DAD3D3;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  body .luminex_page nav .nav_links .summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1ch;
+  }
+  body .luminex_page nav .nav_links .summary #summary {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  body .luminex_page nav .nav_links .summary a {
+    color: #DAD3D3;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  body .luminex_page nav .nav_links .insights {
+    position: relative;
+    display: inline-block;
+  }
+  body .luminex_page nav .nav_links .insights .dropbtn {
+    background-color: black;
+    color: #DAD3D3;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  body .luminex_page nav .nav_links .insights .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 120px;
+    min-height: 80px;
+    border: 2px solid rgba(218, 211, 211, 0.3568627451);
+    border-radius: 10px;
+    transition: 0.6s all ease-in;
+    z-index: 1;
+    padding: 1em;
+  }
+  body .luminex_page nav .nav_links .insights .dropdown-content a {
+    color: #DAD3D3;
+    text-decoration: none;
+    display: block;
+    font-family: "Inter", sans-serif;
+    padding: 0.5em 0.1em;
+  }
+  body .luminex_page nav .nav_links .insights .dropdown-content a:hover {
+    background-color: rgba(218, 211, 211, 0.3568627451);
+    background-color: white;
+    color: #66C7E5;
+    color: black;
+    border-radius: 5px;
+  }
+  body .luminex_page nav .nav_links .insights:hover .dropdown-content {
+    display: block;
+  }
+  body .luminex_page .lumin_stuff {
+    background-image: url("./img/Background_Luminex.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  body .luminex_page .lumin_stuff .page_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15ch;
+    margin: 15ch 0 0 0;
+  }
+  body .luminex_page .lumin_stuff .page_content .top_box {
+    background-image: url("./img/Background_Luminex.png");
+    border-radius: 10px;
+    width: 75%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+  }
+  body .luminex_page .lumin_stuff .page_content .top_box .head_lights_img #head_lights {
+    width: 68%;
+    border: 2px solid rgba(218, 211, 211, 0.3568627451);
+    border-radius: 10px;
+  }
+  body .luminex_page .lumin_stuff .page_content .top_box .company_purpose {
+    height: 100%;
+    width: 60%;
+    background-color: black;
+    border: 2px solid rgba(218, 211, 211, 0.3568627451);
+    border-radius: 10px;
+  }
+  body .luminex_page .lumin_stuff .page_content .top_box .company_purpose .solutions {
+    color: #66C7E5;
+    position: relative;
+    left: 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-size: 1.6vw;
+    font-weight: bold;
+    width: 60%;
+    margin: 2em 0 0 0em;
+  }
+  body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
+    border: 3px solid white;
+    width: 25vw;
+    margin: 1ch 0 0 10.5ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    width: 75%;
+    width: 100%;
+    height: 38%;
+    border: 2px solid rgba(218, 211, 211, 0.3568627451);
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .marketing {
+    background-image: url("./img/marketing_light.png");
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line {
+    display: flex;
+    flex-direction: column;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line a {
+    position: absolute;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .marketing .link_line ul {
+    border: 2px solid #66C7E5;
+    width: 6vw;
+    margin-top: 3ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .operations {
+    background-image: url("./img/screwing light.png");
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line {
+    display: flex;
+    flex-direction: column;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line a {
+    position: absolute;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line ul {
+    border: 2px solid #66C7E5;
+    width: 6vw;
+    margin-top: 3ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .environmental {
+    background-image: url("./img/office_lights.png");
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line {
+    display: flex;
+    flex-direction: column;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line a {
+    position: absolute;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line ul {
+    border: 2px solid #66C7E5;
+    width: 6vw;
+    margin-top: 3ch;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons {
+    background-image: url("./img/hand_light.png");
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line {
+    display: flex;
+    flex-direction: column;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line a {
+    position: absolute;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line ul {
+    border: 2px solid #66C7E5;
+    width: 6vw;
+    margin-top: 3ch;
+  }
 }/*# sourceMappingURL=style.css.map */
