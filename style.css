@@ -584,9 +584,9 @@
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line ul {
     opacity: 0;
     border: 2px solid #66C7E5;
-    width: 6vw;
+    width: 4vw;
     margin-top: 3ch;
-    margin: 4ch 0 0 4ch;
+    margin: 4ch 0 0 2ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations .link_line:hover ul {
     opacity: 1;
@@ -619,9 +619,9 @@
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line ul {
     opacity: 0;
     border: 2px solid #66C7E5;
-    width: 7.5vw;
+    width: 5.5vw;
     margin-top: 3ch;
-    margin: 4ch 0 0 4ch;
+    margin: 4ch 0 0 2ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental .link_line:hover ul {
     opacity: 1;
@@ -654,9 +654,9 @@
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line ul {
     opacity: 0;
     border: 2px solid #66C7E5;
-    width: 7.5vw;
+    width: 5.5vw;
     margin-top: 3ch;
-    margin: 4ch 0 0 4ch;
+    margin: 4ch 0 0 3ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons .link_line:hover ul {
     opacity: 1;
