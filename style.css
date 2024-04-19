@@ -163,6 +163,8 @@ body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
 }
 body .luminex_page .lumin_stuff .page_content .bottom_box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   border-radius: 10px;
   width: 75%;
@@ -171,37 +173,64 @@ body .luminex_page .lumin_stuff .page_content .bottom_box {
   gap: 18ch;
 }
 body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one {
+  background-image: url("./img/marketing_light.png");
+  width: 18%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 2.5ch;
 }
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #marketing_link {
+body .luminex_page .lumin_stuff .page_content .bottom_box #marketing_link:hover ul {
+  border: 2px solid #66C7E5;
+  width: 4vw;
+  margin-top: -0.1ch;
+  margin-left: 2ch;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_two {
+  background-image: url("./img/screwing light.png");
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_three {
+  background-image: url("./img/office_lights.png");
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_three {
+  background-image: url("./img/office_lights.png");
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box .pic_four {
+  background-image: url("./img/office_lights.png");
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .luminex_page .lumin_stuff .page_content .bottom_box a {
   position: absolute;
   font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
   color: white;
-  font-weight: bold;
+  font-size: 1.2rem;
   text-decoration: none;
-  margin: 0 0 0 0ch;
+  font-weight: bold;
 }
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #marketing_light {
-  width: 120%;
-  height: 100%;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #operations_light {
-  width: 120%;
-  height: 100%;
-  margin-top: 1ch;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #office_lights {
-  width: 120%;
-  height: 100%;
-  margin-top: 1ch;
-}
-body .luminex_page .lumin_stuff .page_content .bottom_box .pic_one #hand_light {
-  width: 115%;
-  height: 100%;
-  margin-top: 1ch;
+body .luminex_page .lumin_stuff .page_content .bottom_box ul {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

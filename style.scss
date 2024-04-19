@@ -210,6 +210,8 @@ body {
                 
                 .bottom_box {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background-color: black;
                     border-radius: 10px;
                     width: 75%;
@@ -217,53 +219,74 @@ body {
                     border: 2px solid $borderfont;
                     gap: 18ch;
                     .pic_one {
+                        background-image: url("./img/marketing_light.png");
+                        width: 18%;
+                        height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        margin: 0 0 0 2.5ch;
-                        // for the dark pic under it
-                        // position: absolute;
-                        // width: 100%;
-                        #marketing_link {
-                            position: absolute;
-                            // display: flex;
-                            // justify-content: center;
-                            // align-items: center;
-                            font-family: 'Inter', sans-serif;
-                            font-size: 1.2rem;
-                            color: white;
-                            font-weight: bold;
-                            text-decoration: none;
-                            // background-color: #66C7E5;
-                            margin: 0 0 0 -0ch;
-                            // width: 100%;
-                        }
-                        #marketing_light {
-                            width: 120%;
-                            height: 100%;
-                        }
-                        #operations_light {
-                            width: 120%;
-                            height: 100%;
-                            margin-top: 1ch;
-                        }
-                        #office_lights {
-                            width: 120%;
-                            height: 100%;
-                            margin-top: 1ch;
-                        }
-                        #hand_light {
-                            width: 115%;
-                            height: 100%;
-                            margin-top: 1ch;
-                        }
-                        // ul {
-                        //     border: 3px solid $bluetext;
-                        //     width: 23ch;
-                        //     // margin-top: -2vh;
-                        // }
                     }
+                    #marketing_link:hover {
+                        ul {
+                            border: 2px solid $bluetext;
+                            width: 4vw;
+                            margin-top: -.1ch;
+                            margin-left: 2ch;
+                        }
+                    }
+                    .pic_two {
+                        background-image: url("./img/screwing\ light.png");
+                        width: 18%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .pic_three {
+                        background-image: url("./img/office_lights.png");
+                        width: 18%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .pic_three {
+                        background-image: url("./img/office_lights.png");
+                        width: 18%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .pic_four {
+                        background-image: url("./img/office_lights.png");
+                        width: 18%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    a {
+                        position: absolute;
+                        font-family: 'Inter', sans-serif;
+                        color: white;
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                    ul {
+                        display: none;
+                        // border: 2px solid $bluetext;
+                        // width: 4vw;
+                        // margin-top: -.1ch;
+                        // margin-left: 2ch;
+                    }
+                    
                 }
             }
         }
