@@ -181,11 +181,11 @@
     line-height: 0.2em;
     width: 60%;
     width: 100%;
-    margin: 0em 0 0 0em;
+    margin: -3ch 0 0 -3em;
   }
   body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
     border: 3px solid white;
-    width: 25vw;
+    width: 22vw;
     margin: 1vw 0 0 -4vw;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box {
@@ -197,13 +197,10 @@
     width: 75%;
     height: 38%;
     border: 2px solid rgba(218, 211, 211, 0.3568627451);
-    gap: 10ch;
+    gap: 2ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing {
     background-image: url("./img/marketing_light.png");
-    height: 100%;
-    width: 21%;
-    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +216,7 @@
     position: absolute;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
   }
@@ -235,8 +232,6 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations {
     background-image: url("./img/screwing light.png");
-    height: 98%;
-    width: 21%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +248,7 @@
     position: absolute;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
   }
@@ -270,9 +265,6 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .environmental {
     background-image: url("./img/office_lights.png");
-    height: 98%;
-    width: 17%;
-    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +281,7 @@
     position: absolute;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
   }
@@ -306,10 +298,6 @@
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .pros_cons {
     background-image: url("./img/hand_light.png");
-    height: 98%;
-    height: 89%;
-    width: 17%;
-    width: 21%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,7 +314,7 @@
     position: absolute;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
   }
@@ -522,7 +510,7 @@
     width: 75%;
     height: 38%;
     border: 2px solid rgba(218, 211, 211, 0.3568627451);
-    gap: 10ch;
+    gap: 13ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing {
     background-image: url("./img/marketing_light.png");

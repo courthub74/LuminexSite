@@ -225,11 +225,11 @@ $borderfont: #dad3d35b;
                                 line-height: .2em;
                                 width: 60%;
                                 width: 100%;
-                                margin: 0em 0 0 0em;
+                                margin: -3ch 0 0 -3em;
                             }
                             ul {
                                 border: 3px solid white;
-                                width: 25vw;
+                                width: 22vw;
                                 margin: 1vw 0 0 -4vw;
                                 // height: 23vw;
                             }
@@ -247,21 +247,17 @@ $borderfont: #dad3d35b;
                         // width: 100%;
                         height: 38%;
                         border: 2px solid $borderfont;
-                        gap: 10ch;
-
+                        gap: 2ch;
+                        // position: absolute;
                         // Marketing
                         .marketing {
                             background-image: url("./img/marketing_light.png");
-                            // padding: 5em 1em 5em 1em;
-                            // width: 100%;
-                            height: 100%;
-                            width: 21%;
-                            width: 25%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             border-radius: 10px;
-                            // margin-top: 2ch;
+                            
+                           
                             .link_line {
                                 display: flex;
                                 justify-content: center;
@@ -271,7 +267,7 @@ $borderfont: #dad3d35b;
                                     position: absolute;
                                     color: white;
                                     font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
+                                    font-size: 1rem;
                                     font-weight: bold;
                                     text-decoration: none;
                                 }
@@ -292,10 +288,7 @@ $borderfont: #dad3d35b;
                         // Operations
                         .operations {
                             background-image: url("./img/screwing\ light.png");
-                            height: 98%;
-                            // width: 17%;
-                            width: 21%;
-                            // width: 25%;
+                            
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -310,7 +303,7 @@ $borderfont: #dad3d35b;
                                     position: absolute;
                                     color: white;
                                     font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
+                                    font-size: 1rem;
                                     font-weight: bold;
                                     text-decoration: none;
                                 }
@@ -332,9 +325,7 @@ $borderfont: #dad3d35b;
                         // Environmental
                         .environmental {
                             background-image: url("./img/office_lights.png");
-                            height: 98%;
-                            width: 17%;
-                            width: 25%;
+                           
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -349,7 +340,7 @@ $borderfont: #dad3d35b;
                                     position: absolute;
                                     color: white;
                                     font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
+                                    font-size: 1rem;
                                     font-weight: bold;
                                     text-decoration: none;
                                 }
@@ -371,10 +362,7 @@ $borderfont: #dad3d35b;
                         // Pros and Cons
                         .pros_cons {
                             background-image: url("./img/hand_light.png");
-                            height: 98%;
-                            height: 89%;
-                            width: 17%;
-                            width: 21%;
+                           
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -389,7 +377,7 @@ $borderfont: #dad3d35b;
                                     position: absolute;
                                     color: white;
                                     font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
+                                    font-size: 1rem;
                                     font-weight: bold;
                                     text-decoration: none;
                                 }
@@ -588,6 +576,7 @@ $borderfont: #dad3d35b;
                             align-items: center;
                             height: 100%;
                             width: 80%;
+                            // width: 100%;
                             background-color: black;
                             border: 2px solid $borderfont;
                             border-radius: 10px;
@@ -625,7 +614,7 @@ $borderfont: #dad3d35b;
                         // width: 100%;
                         height: 38%;
                         border: 2px solid $borderfont;
-                        gap: 10ch;
+                        gap: 13ch;
 
                         // Marketing
                         .marketing {
