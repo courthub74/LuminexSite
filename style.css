@@ -504,6 +504,16 @@
     width: 100%;
     margin: -1em 0 0 0em;
   }
+  body .luminex_page .lumin_stuff .page_content .top_box .company_purpose .solutions::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    width: 25vw;
+    background-color: white;
+  }
   body .luminex_page .lumin_stuff .page_content .top_box .company_purpose ul {
     border: 3px solid white;
     width: 25vw;
@@ -521,7 +531,7 @@
     gap: 13ch;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .marketing {
-    background-image: url("./img/marketing_light.png");
+    background-image: url("./img/office_lights.png");
     height: 89%;
     width: 17%;
     display: flex;
@@ -554,7 +564,7 @@
     transition: 0.3s all ease-in;
   }
   body .luminex_page .lumin_stuff .page_content .bottom_box .operations {
-    background-image: url("./img/screwing light.png");
+    background-image: url("./img/office_lights.png");
     height: 89%;
     width: 17%;
     display: flex;
