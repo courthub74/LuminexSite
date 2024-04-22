@@ -4,52 +4,61 @@
 $headerfont: #DAD3D3;
 $bluetext: #66C7E5;
 
+$newnav: #06183A;
+$supportblue: #668CF6;
+$backgroundwhite: #F0F5FF;
+
 // BORDERS
 $borderfont: #dad3d35b;
 
-// BLACK with lighter opacity
 
-
+* {
+    margin: 0;
+}
 
 // Mobile portrait
-@media only screen and (max-width: 600px), (orientation: portrait) {
-    body {
-        background-color: black;
-        margin: 0;
-        .luminex_page {
-            display: none;
-        }
-    }
-}
+// @media only screen and (max-width: 600px) and (orientation: portrait) {
+//     body {
+//         background-color: darkred;
+//         margin: 0;
+//         .luminex_page {
+//             display: none;
+//         }
+//     }
+// }
 
 // Mobile landscape
-@media only screen and (min-width: 601px), (orientation: landscape) {
-    body {
-        background-color: darkblue;
-        margin: 0;
-        .luminex_page {
-            display: none;
-        }
-    }
-}
+// @media only screen and (min-width: 601px) and (orientation: landscape) {
+//     body {
+//         background-color: darkblue;
+//         margin: 0;
+//         .luminex_page {
+//             display: none;
+//         }
+//     }
+// }
 
-// Tablet
-
-// Desktop
-@media only screen and (min-width: 1200px){
+// 1900
+@media only screen and (min-width: 1500px) {
     body {
-        margin: 0;
-        // Whole Page
+        // display: none;
+        background-color: $newnav;
         .luminex_page {
+            // background-image: url("./img/Background_Luminex.png");
+            background-color: $backgroundwhite;
             display: flex;
             flex-direction: column;
-            height: 100vh;
             // Navbar
             nav {
-                background-color: black;
+                background-color: $newnav;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                height: 5em;
+                position: fixed;
+                width: 100%;
+                z-index: 100;
+                // height: 35%;
                 // Company Logo
                 .co_name_logo {
                     // Make this fixed within window
@@ -59,14 +68,14 @@ $borderfont: #dad3d35b;
                         justify-content: center;
                         align-items: center;
                         #lightbulb {
-                            width: 1.4em;
-                            height: 1.4em;
+                            width: 1.2em;
+                            height: 1.2em;
                         }
                         p {
                             color: $headerfont;
                             color: white;
                             font-family: 'Inter', sans-serif;
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -83,13 +92,13 @@ $borderfont: #dad3d35b;
                         align-items: center;
                         gap: 1ch;
                         #home {
-                            width: 1.5em;
-                            height: 1.5em;
+                            width: 1.2em;
+                            height: 1.2em;
                         }
                         a {
                             color: $headerfont;
                             font-family: 'Inter', sans-serif;
-                            font-size: 1rem;
+                            font-size: .8rem;
                             text-decoration: none;
                         }
                     }
@@ -100,13 +109,13 @@ $borderfont: #dad3d35b;
                         align-items: center;
                         gap: 1ch;
                         #summary {
-                            width: 1.5em;
-                            height: 1.5em;
+                            width: 1.2em;
+                            height: 1.2em;
                         }
                         a {
                             color: $headerfont;
                             font-family: 'Inter', sans-serif;
-                            font-size: 1rem;
+                            font-size: .8rem;
                             text-decoration: none;
                         }
                     }
@@ -115,17 +124,17 @@ $borderfont: #dad3d35b;
                         position: relative;
                         display: inline-block;
                         .dropbtn {
-                            background-color: black;
+                            background-color: $newnav;
                             color: $headerfont;
                             font-family: 'Inter', sans-serif;
-                            font-size: 1rem;
+                            font-size: .8rem;
                             border: none;
                             cursor: pointer;
                         }
                         .dropdown-content {
                             display: none;
                             position: absolute;
-                            background-color: black;
+                            background-color: $newnav;
                             min-width: 120px;
                             min-height: 80px;
                             border: 2px solid $borderfont;
@@ -133,23 +142,18 @@ $borderfont: #dad3d35b;
                             transition: .6s all ease-in;
                             // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                             z-index: 1;
-                            // display: flex;
-                            // flex-direction: column;
-                            // justify-content: center;
-                            // align-items: center;
-                            // gap: 2ch;
                             padding: 1em;
-                            // margin: 1em 0 0 0em;
                             a {
                                 color: $headerfont;
                                 text-decoration: none;
                                 display: block;
                                 font-family: 'Inter', sans-serif;
                                 padding: .5em .1em;
+                                font-size: .8rem;
                             }
                             a:hover {
                                 background-color: $borderfont;
-                                background-color: white;
+                                // background-color: white;
                                 color: $bluetext;
                                 color: black;
                                 border-radius: 5px;
@@ -163,621 +167,279 @@ $borderfont: #dad3d35b;
                     }
                 }
             }
-            // Body of Page
-            .lumin_stuff {
-                background-image: url("./img/Background_Luminex.png");
+            .luminex_stuff {
+                // background-image: url("./img/Background_Luminex.png");
+                background-color: $backgroundwhite;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                height: 100%;
-    
-                // Container for content
-                .page_content {
+                height: 93vh;
+                // TOP SQUARE
+                .top_square {
+                    // Size it in em
+                    width: 65em;
                     width: 100%;
-                    height: 100%;
+                    height: 20em;
                     display: flex;
-                    flex-direction: column;
-                    // justify-content: center;
-                    align-items: center;
-                    gap: 15ch;
-                    margin: 15ch 0 0 0;
-                    // background-color: #66C7E5;
-                    .top_box {
-                        background-image: url("./img/Background_Luminex.png");
-                        // background-color: black;
-                        border-radius: 10px;
-                        width: 75%;
-                        height: 35%;
+                    justify-content: center;
+                    margin: 120px 0 30px 0;
+                    // border-radius: 10px;
+                    gap: 4em;
+                    // Picture
+                    // #lights {
+                    //     // border: 1px solid white;
+                    //     border-radius: 5px;
+                    //     width: 25em;
+                    //     height: 15em;
+                    //     // height: 100%;
+                    // }
+                    // Content
+                    .right_square {
                         display: flex;
                         align-items: center;
-                        // border: 2px solid $borderfont;
-                        .head_lights_img {
-                            // background-color: #66C7E5;
-                            // height: 100%;
-                            #head_lights {
-                                width: 68%;
-                                width: 78%;
-                                // height: 100%;
-                                // height: 20vw;
-                                border: 2px solid $borderfont;
-                                border-radius: 10px;
-                            }
-                        }
-                        .company_purpose {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100%;
-                            width: 80%;
-                            background-color: black;
-                            border: 2px solid $borderfont;
-                            border-radius: 10px;
-                                
-                            .solutions {
-                                color: $bluetext;
-                                position: relative;
-                                left: 85px;
-                                font-family: 'Inter', sans-serif;
-                                font-size: 1.8rem;
-                                font-size: 1.6vw;
-                                font-weight: bold;
-                                line-height: .2em;
-                                width: 60%;
-                                width: 100%;
-                                margin: -3ch 0 0 -3em;
-                            }
-                            ul {
-                                border: 3px solid white;
-                                width: 22vw;
-                                margin: 1vw 0 0 -4vw;
-                                // height: 23vw;
-                            }
-                        }
-                    }
-                    
-                    
-                    .bottom_box {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        // border: 4px solid $borderfont;
                         background-color: black;
-                        border-radius: 10px;
-                        width: 75%;
-                        // width: 100%;
-                        height: 38%;
-                        border: 2px solid $borderfont;
-                        gap: 5ch;
-                        // position: absolute;
-                        // Marketing
-                        .marketing {
-                            background-image: url("./img/marketing_light.png");
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 10px;
-                            height: 70%;
-                            width: 20%;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 5vw;
-                                    margin: 4ch 0 0 3ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
-                        }
-                        // Operations
-                        .operations {
-                            background-image: url("./img/screwing light.png");
-                            height: 70%;
-                            width: 20%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-top: 1ch;
-                            border-radius: 10px;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 5vw;
-                                    margin-top: 3ch;
-                                    margin: 4ch 0 0 2ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
-                        }
-                        // Environmental
-                        .environmental {
-                            background-image: url("./img/office_lights.png");
-                            height: 70%;
-                            width: 20%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-top: 1ch;
-                            border-radius: 10px;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 7.5vw;
-                                    margin-top: 3ch;
-                                    margin: 4ch 0 0 2ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
-                        }
-                        // Pros and Cons
-                        .pros_cons {
-                            background-image: url("./img/hand_light.png");
-                            height: 70%;
-                            width: 20%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-top: 1ch;
-                            border-radius: 10px;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 7vw;
-                                    margin-top: 3ch;
-                                    margin: 4ch 0 0 2ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 1900px){
-    body {
-        margin: 0;
-        // Whole Page
-        .luminex_page {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            // Navbar
-            nav {
-                background-color: black;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                // Company Logo
-                .co_name_logo {
-                    // Make this fixed within window
-                    margin: 0 0 0 10ch;
-                    .logo_name {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        #lightbulb {
-                            width: 1.4em;
-                            height: 1.4em;
-                        }
-                        p {
-                            color: $headerfont;
-                            color: white;
+                        // background-color: blue;
+                        background-image: url("./img/top_banner.png");
+                        // border-radius: 10px;
+                        width: 65em;
+                        width: 100%;
+                        height: 15em;
+                        .solutions {
+                            color: $bluetext;
+                            font-size: 1.7rem;
                             font-family: 'Inter', sans-serif;
-                            font-size: 1.5rem;
+                            font-weight: bold;
+                            position: relative;
+                            left: 2em;
+                            width: 55%;
                         }
-                    }
-                }
-                // Nav Links
-                .nav_links {
-                    display: flex;
-                    gap: 3ch;
-                    position: relative;
-                    right: 17ch;
-                    // Home
-                    .home {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1ch;
-                        #home {
-                            width: 1.5em;
-                            height: 1.5em;
-                        }
-                        a {
-                            color: $headerfont;
-                            font-family: 'Inter', sans-serif;
-                            font-size: 1rem;
-                            text-decoration: none;
-                        }
-                    }
-                    // Summary
-                    .summary {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1ch;
-                        #summary {
-                            width: 1.5em;
-                            height: 1.5em;
-                        }
-                        a {
-                            color: $headerfont;
-                            font-family: 'Inter', sans-serif;
-                            font-size: 1rem;
-                            text-decoration: none;
-                        }
-                    }
-                    // Insights
-                    .insights {
-                        position: relative;
-                        display: inline-block;
-                        .dropbtn {
-                            background-color: black;
-                            color: $headerfont;
-                            font-family: 'Inter', sans-serif;
-                            font-size: 1rem;
-                            border: none;
-                            cursor: pointer;
-                        }
-                        .dropdown-content {
-                            display: none;
+                        .solutions::before {
+                            content: '';
                             position: absolute;
-                            background-color: black;
-                            min-width: 120px;
-                            min-height: 80px;
-                            border: 2px solid $borderfont;
-                            border-radius: 10px;
-                            transition: .6s all ease-in;
-                            // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                            z-index: 1;
-                            padding: 1em;
-                            // margin: 1em 0 0 0em;
-                            a {
-                                color: $headerfont;
-                                text-decoration: none;
-                                display: block;
-                                font-family: 'Inter', sans-serif;
-                                padding: .5em .1em;
-                            }
-                            a:hover {
-                                background-color: $borderfont;
-                                background-color: white;
-                                color: $bluetext;
-                                color: black;
-                                border-radius: 5px;
-                            }
-                          }
-                    }
-                    .insights:hover {
-                        .dropdown-content {
-                            display: block;
+                            bottom: -10px;
+                            left: 0;
+                            right: 0;
+                            height: 6px;
+                            width: 55%;
+                            background-color: white;
                         }
                     }
                 }
-            }
-            // Body of Page
-            .lumin_stuff {
-                background-image: url("./img/Background_Luminex.png");
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 100%;
-    
-                // Container for content
-                .page_content {
-                    width: 100%;
-                    height: 100%;
+                // BOTTOM SQUARE
+                .bottom_square {
+                    width: 65em;
+                    // width: 100em;
+                    height: 15em;
+                    background-color: black;
+                    // background-color: blueviolet;
+                    border: 4px solid $borderfont;
+                    border-radius: 15px;
                     display: flex;
-                    flex-direction: column;
-                    // justify-content: center;
+                    justify-content: center;
                     align-items: center;
-                    gap: 15ch;
-                    margin: 15ch 0 0 0;
-                    // background-color: #66C7E5;
-                    .top_box {
-                        background-image: url("./img/Background_Luminex.png");
-                        // background-color: black;
-                        border-radius: 10px;
-                        width: 75%;
-                        height: 35%;
+                    // padding: 1em 6em 1em 6em;
+                    .all_squares {
                         display: flex;
+                        justify-content: center;
                         align-items: center;
-                        // border: 2px solid $borderfont;
-                        .head_lights_img {
-                            // background-color: #66C7E5;
-                            // height: 100%;
-                            #head_lights {
-                                width: 68%;
-                                width: 78%;
-                                // height: 100%;
-                                // height: 20vw;
-                                border: 2px solid $borderfont;
-                                border-radius: 10px;
-                            }
-                        }
-                        .company_purpose {
+                        gap: 2em;
+                        gap: 4em;
+                        .square {
                             display: flex;
-                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            height: 100%;
-                            width: 80%;
-                            // width: 100%;
-                            background-color: black;
-                            border: 2px solid $borderfont;
-                            border-radius: 10px;
-                                
-                            .solutions {
-                                color: $bluetext;
-                                position: relative;
-                                left: 85px;
+                            a {
+                                position: absolute;
+                                color: white;
+                                text-decoration: none;
                                 font-family: 'Inter', sans-serif;
-                                font-size: 1.8rem;
-                                font-size: 1.6vw;
                                 font-weight: bold;
-                                line-height: .2em;
-                                width: 60%;
-                                width: 100%;
-                                margin: -1em 0 0 0em;
-                                // text-decoration: underline;
                             }
-                            .solutions::before {
+                            a::before {
                                 content: '';
                                 position: absolute;
                                 bottom: -8px;
                                 left: 0;
                                 right: 0;
-                                height: 10px;
-                                width: 25vw;
-                                background-color: white;
+                                height: 4px;
+                                width: 120%;
+                                background-color: $bluetext;
+                                opacity: 0;  
                             }
-                            ul {
-                                border: 3px solid white;
-                                width: 25vw;
-                                margin: 0vw 0 0 -11vw;
-                                // height: 23vw;
+                            a:hover:before {
+                                opacity: 1;
+                                transition: .3s all ease-in;
+                            }
+                            #light_one {
+                                width: 13em;
+                                height: 13em;
+                                // border-radius: 30px;
+                                // border-radius: 15px;
+                            }
+                            #light_two {
+                                width: 13em;
+                                height: 13em;
+                                border-radius: 30px;
+                                border-radius: 25px;
+                                margin: .3em 0 0 0;
                             }
                         }
                     }
-                    
-                    
-                    .bottom_box {
+                }
+            }
+            footer {
+                height: 17em;
+                display: flex;
+                flex-direction: column;
+                .top_footer_contents {
+                    display: flex;
+                    padding: 1em;
+                     // Company Logo
+                    .co_name_logo {
+                        // Make this fixed within window
                         display: flex;
-                        justify-content: center;
+                        // background-color: red;
+                        margin: 2em 0 0 4em;
+                        .logo_name {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 0em;
+                            #lightbulb {
+                                width: 1em;
+                                height: 1em;
+                            }
+                            p {
+                                color: $headerfont;
+                                color: white;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 1rem;
+                            }
+                        }
+                        // footer list
+                        .footer_list {
+                            display: flex;
+                            gap: 4em;
+                            margin: 1em 0 0 5em;
+                            margin: 1.5em 0 0 15em;
+                            .footer_list_contents {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1em;
+                                a {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: .8rem;
+                                    text-decoration: none;
+                                }
+                            }
+                            .footer_list_contents_two {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1em;
+                                a {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: .8rem;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    // Email Sign Up
+                    .sign_up_div {
+                        margin: 3em 0 0 8em;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5em;
+                        small {
+                            color: $bluetext;
+                            font-family: 'Inter', sans-serif;
+                            font-weight: bold;
+                        }
+                        .email_input {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            input {
+                                background-color: $headerfont;
+                                // background-color: #66C7E5;
+                                border-top-left-radius: 5px;
+                                border-bottom-left-radius: 5px;
+                                border-top-right-radius: 0px;
+                                border-bottom-right-radius: 0px;
+                                width: 25em;
+                                height: 3em;
+                                border: none;
+                            }
+                            button {
+                                background-color: $bluetext;
+                                border-top-left-radius: 0px;
+                                border-bottom-left-radius: 0px;
+                                border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                                color: black;
+                                font-family: 'Inter', sans-serif;
+                                font-weight: bold;
+                                width: 10em;
+                                height: 3.1em;
+                                // border-radius: 0px;
+                                border: none;
+                                cursor: pointer;
+                            }
+                        }
+                        
+                    }
+                }
+               
+                // Socials
+                .connect_with {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .8em;
+                    position: relative;
+                    left: 200px;
+                    // margin: 3em 0 0 15em;
+                    small {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: bold;
+                    }
+                    .socials {
+                        display: flex;
                         align-items: center;
-                        background-color: black;
-                        border-radius: 10px;
-                        width: 75%;
-                        // width: 100%;
-                        height: 38%;
-                        border: 2px solid $borderfont;
-                        gap: 13ch;
-
-                        // Marketing
-                        .marketing {
-                            background-image: url("./img/office_lights.png");
-                            // padding: 5em 1em 5em 1em;
-                            // width: 100%;
-                            height: 89%;
-                            width: 17%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 10px;
-                            // margin-top: 2ch;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 4vw;
-                                    margin: 4ch 0 0 3ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
+                        justify-content: center;
+                        gap: 1.8em;
+                        #twitter {
+                            width: 1.8em;
+                            height: 1.8em;
                         }
-                        // Operations
-                        .operations {
-                            background-image: url("./img/office_lights.png");
-                            height: 89%;
-                            width: 17%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-top: 1ch;
-                            border-radius: 10px;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 4vw;
-                                    margin-top: 3ch;
-                                    margin: 4ch 0 0 2ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
+                        .soc_icon {
+                            width: 2em;
+                            height: 2em;
                         }
-                        // Environmental
-                        .environmental {
-                            background-image: url("./img/office_lights.png");
-                            height: 89%;
-                            width: 18%; 
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-top: 1ch;
-                            border-radius: 10px;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 5.5vw;
-                                    margin-top: 3ch;
-                                    margin: 4ch 0 0 2ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
-                        }
-                        // Pros and Cons
-                        .pros_cons {
-                            background-image: url("./img/hand_light.png");
-                            height: 89%;
-                            width: 18%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-top: 1ch;
-                            border-radius: 10px;
-                            .link_line {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                a {
-                                    position: absolute;
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: 1.2rem;
-                                    font-weight: bold;
-                                    text-decoration: none;
-                                }
-                                ul {
-                                    opacity: 0;
-                                    border: 2px solid $bluetext;
-                                    width: 5.5vw;
-                                    margin-top: 3ch;
-                                    margin: 4ch 0 0 2ch;
-                                }
-                            }
-                            .link_line:hover {
-                                ul {
-                                    opacity: 1;
-                                    transition: .3s all ease-in;
-                                }
-                            }
-                        }
+                        
+                    }
+                }
+                // Copyrights
+                .copyrights {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $bluetext;
+                    color: white;
+                    font-size: small;
+                    font-family: 'Inter', sans-serif;
+                    // font-weight: bold;
+                    gap: .5em;
+                    // margin: 5em 0em 0 -80em;
+                    margin-top: 1em;
+                    margin-right: -9em;
+                    #courdevelops {
+                        width: 2em;
+                        height: 2em;
                     }
                 }
             }
