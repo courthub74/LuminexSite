@@ -5,14 +5,13 @@
 
 @media only screen and (min-width: 1500px) {
   body {
-    background-color: #06183A;
+    background-color: #F0F5FF;
     scroll-snap-type: mandatory;
   }
   body .luminex_page {
-    background-color: #F0F5FF;
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 100vh;
   }
   body .luminex_page nav {
     background-color: #06183A;
@@ -126,7 +125,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120vh;
+    gap: 7em;
     width: 100%;
   }
   body .luminex_page .luminex_stuff .top_square {
@@ -221,12 +220,115 @@
     position: relative;
     right: 90px;
   }
-  body .luminex_page footer {
-    height: 17em;
+  body .luminex_page .luminex_stuff .insight_section {
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 35em;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  }
+  body .luminex_page .luminex_stuff .insight_section .insight_title {
+    font-family: "Inter", sans-serif;
+    color: #06183A;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights .square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #06183A;
+    width: 40%;
+    height: 100%;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights .square button {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    background: none;
+    font-size: 1rem;
+    border: none;
+    margin: 3em 0 0 -7em;
+    cursor: pointer;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights .square button::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 105%;
+    background-color: #66C7E5;
+    opacity: 0;
+    margin: 0 0 0 0.4em;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights .square button:hover:before {
+    opacity: 1;
+    transition: 0.3s all ease-in;
+    z-index: 1;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_one {
+    background-image: url("./img/office_lights.png");
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_one .words {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    line-height: 1.3em;
+    margin: 1.8em 0 0 -0.3em;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_one .words .hover_boxes {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_one .words .hover_boxes.appear {
+    opacity: 1;
+    transition: 0.3s all ease-in;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_two {
+    background-image: url("./img/operations_light.png");
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_two .words {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    line-height: 1.3em;
+    margin: 1.3em 0 0 0em;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_two .words .hover_boxes {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_two .words .hover_boxes.appear {
+    opacity: 1;
+    transition: 0.3s all ease-in;
+  }
+  body .luminex_page footer {
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    margin: 10em 0 0 0;
     background-color: #06183A;
   }
   body .luminex_page footer .top_footer_contents {
@@ -352,7 +454,7 @@
     font-family: "Inter", sans-serif;
     gap: 0.5em;
     position: relative;
-    top: 3em;
+    bottom: 2em;
   }
   body .luminex_page footer .copyrights #courdevelops {
     width: 2em;
