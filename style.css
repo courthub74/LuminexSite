@@ -284,7 +284,7 @@
     transition: 0.3s all ease-in;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_two {
-    background-image: url("./img/operations_one.png");
+    background-image: url("./img/operations_light.png");
     display: flex;
     align-items: center;
   }
