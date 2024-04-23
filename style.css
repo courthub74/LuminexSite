@@ -6,6 +6,7 @@
 @media only screen and (min-width: 1500px) {
   body {
     background-color: #06183A;
+    scroll-snap-type: mandatory;
   }
   body .luminex_page {
     background-color: #F0F5FF;
@@ -136,7 +137,7 @@
     height: 20em;
     display: flex;
     justify-content: center;
-    margin: 450px 0 30px 0;
+    margin: 30em 0 30px 0;
     gap: 4em;
   }
   body .luminex_page .luminex_stuff .top_square .right_square {
@@ -168,35 +169,52 @@
     background-color: white;
   }
   body .luminex_page .luminex_stuff .exec_summary {
+    width: 100%;
+    margin-top: 1em;
+  }
+  body .luminex_page .luminex_stuff .exec_summary .exec_words {
     width: 60%;
     color: #06183A;
     font-family: "Inter", sans-serif;
-    margin: 0em 0 0 -33em;
+    margin: 0em 0 0 5em;
     line-height: 1.8em;
     font-size: 1rem;
     height: 80%;
   }
-  body .luminex_page .luminex_stuff .all_insights {
+  body .luminex_page .luminex_stuff #insight_section {
+    padding: 8em 0 0 0;
+  }
+  body .luminex_page .luminex_stuff #insight_section p {
+    color: #06183A;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 -3em 0.5em;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5em;
+    gap: 1em;
   }
-  body .luminex_page .luminex_stuff .all_insights .square {
+  body .luminex_page .luminex_stuff #insight_section .all_insights .square {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body .luminex_page .luminex_stuff .all_insights .square button {
+  body .luminex_page .luminex_stuff #insight_section .all_insights .square button {
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     position: absolute;
     background: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border: none;
     margin: 3em 0 0 0;
+    cursor: pointer;
   }
-  body .luminex_page .luminex_stuff .all_insights .square button::before {
+  body .luminex_page .luminex_stuff #insight_section .all_insights .square button::before {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -204,23 +222,29 @@
     right: 0;
     height: 5px;
     width: 110%;
-    background-color: #66C7E5;
+    background-color: #668CF6;
     opacity: 0;
   }
-  body .luminex_page .luminex_stuff .all_insights .square button:hover:before {
+  body .luminex_page .luminex_stuff #insight_section .all_insights .square button:hover:before {
     opacity: 1;
     transition: 0.3s all ease-in;
     z-index: 1;
   }
-  body .luminex_page .luminex_stuff .all_insights .square #marketing {
-    width: 30em;
-    height: 40em;
+  body .luminex_page .luminex_stuff #insight_section .all_insights .square #marketing {
+    width: 21em;
+    height: 27em;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights .square #operations {
+    width: 21em;
+    height: 26.6em;
+    margin-top: -0.3em;
   }
   body .luminex_page footer {
     height: 17em;
     display: flex;
     flex-direction: column;
     margin: 20em 0 0 0;
+    background-color: #06183A;
   }
   body .luminex_page footer .top_footer_contents {
     display: flex;
