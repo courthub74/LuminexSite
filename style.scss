@@ -38,7 +38,7 @@ $borderfont: #dad3d35b;
 //     }
 // }
 
-// 1900
+// 1500
 @media only screen and (min-width: 1500px) {
     body {
         // display: none;
@@ -246,7 +246,7 @@ $borderfont: #dad3d35b;
                         #led_one {
                             border-radius: 50%;
                             border-radius: 15px;
-                            box-shadow: 1px 1px 1px 1px $backgroundwhite;
+                            box-shadow: 2px 2px 2px 2px $backgroundwhite;
                         }
                    }
                    .led_two {
@@ -256,9 +256,11 @@ $borderfont: #dad3d35b;
                     margin: -3em 0 0 -3em;
                     width: 15em;
                     height: 15em;
-                    box-shadow: 1px 1px 1px 1px $bluetext;
+                    
                         #led_two {
-                            
+                            border-radius: 15px;
+                            filter: brightness(70%);
+                            box-shadow: 2px 2px 2px 2px $bluetext;
                         }
                    }
                 }
@@ -294,10 +296,11 @@ $borderfont: #dad3d35b;
                                 font-weight: bold;
                                 position: absolute;
                                 background: none;
-                                font-size: 1.3rem;
+                                font-size: 1rem;
                                 border: none;
-                                margin: 3em 0 0 0;
+                                margin: 3em 0 0 -7em;
                                 cursor: pointer;
+                                // background-color: yellow;
                             }
                             button::before {
                                 content: '';
@@ -306,9 +309,10 @@ $borderfont: #dad3d35b;
                                 left: 0;
                                 right: 0;
                                 height: 5px;
-                                width: 110%;
+                                width: 105%;
                                 background-color: $bluetext;
                                 opacity: 0;  
+                                margin: 0 0 0 .4em;
                             }
                             button:hover:before {
                                 opacity: 1;
@@ -352,6 +356,8 @@ $borderfont: #dad3d35b;
                                     opacity: 0;
                                 }
                                 // Make the boxes words appear
+                                // this will work for all queries 
+                                    // just query by ID in the js
                                 .hover_boxes.appear {
                                     opacity: 1;
                                     transition: .3s all ease-in;
@@ -361,6 +367,35 @@ $borderfont: #dad3d35b;
                         }
                         #square_two {
                             background-image: url("./img/operations_one.png");
+                            display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                            // WORDS that appear upon hover
+                            .words {
+                                // background-color: #668CF6;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 60%;
+                                line-height: 1.3em;
+                                .hover_boxes {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: lighter;
+                                    font-size: .8rem;
+                                    // Make opacity 0
+                                    opacity: 0;
+                                }
+                                // Make the boxes words appear
+                                // this will work for all queries 
+                                    // just query by ID in the js
+                                .hover_boxes.appear {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
+                                }
+                                
+                            }
                         }
                         #square_three {
                             background-image: url("./img/environ_light_one.png");

@@ -188,7 +188,7 @@
   body .luminex_page .luminex_stuff .exec_summary .led_one #led_one {
     border-radius: 50%;
     border-radius: 15px;
-    box-shadow: 1px 1px 1px 1px #F0F5FF;
+    box-shadow: 2px 2px 2px 2px #F0F5FF;
   }
   body .luminex_page .luminex_stuff .exec_summary .led_two {
     background-color: #06183A;
@@ -197,7 +197,11 @@
     margin: -3em 0 0 -3em;
     width: 15em;
     height: 15em;
-    box-shadow: 1px 1px 1px 1px #66C7E5;
+  }
+  body .luminex_page .luminex_stuff .exec_summary .led_two #led_two {
+    border-radius: 15px;
+    filter: brightness(70%);
+    box-shadow: 2px 2px 2px 2px #66C7E5;
   }
   body .luminex_page .luminex_stuff #insight_section {
     padding: 8em 0 0 0;
@@ -230,9 +234,9 @@
     font-weight: bold;
     position: absolute;
     background: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border: none;
-    margin: 3em 0 0 0;
+    margin: 3em 0 0 -7em;
     cursor: pointer;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights .square button::before {
@@ -242,9 +246,10 @@
     left: 0;
     right: 0;
     height: 5px;
-    width: 110%;
+    width: 105%;
     background-color: #66C7E5;
     opacity: 0;
+    margin: 0 0 0 0.4em;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights .square button:hover:before {
     opacity: 1;
@@ -277,6 +282,27 @@
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_two {
     background-image: url("./img/operations_one.png");
+    display: flex;
+    align-items: center;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    line-height: 1.3em;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words .hover_boxes {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words .hover_boxes.appear {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_three {
     background-image: url("./img/environ_light_one.png");
