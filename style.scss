@@ -365,6 +365,7 @@ $borderfont: #dad3d35b;
                             // justify-content: center;
                             align-items: center;
                             // WORDS that appear upon hover
+                           
                             .words {
                                 // background-color: #668CF6;
                                 height: 100%;
@@ -379,7 +380,7 @@ $borderfont: #dad3d35b;
                                     font-weight: lighter;
                                     font-size: .8rem;
                                     // Make opacity 0
-                                    opacity: 0;
+                                    opacity: 1;
                                 }
                                 // Make the boxes words appear
                                 // this will work for all queries 
@@ -412,7 +413,7 @@ $borderfont: #dad3d35b;
                                     font-weight: lighter;
                                     font-size: .8rem;
                                     // Make opacity 0
-                                    opacity: 0;
+                                    opacity: 1;
                                 }
                                 // Make the boxes words appear
                                 // this will work for all queries 
@@ -432,21 +433,23 @@ $borderfont: #dad3d35b;
                             align-items: center;
                             // WORDS that appear upon hover
                             .words {
-                                // background-color: #668CF6;
+                                background-color: #668CF6;
                                 height: 100%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 width: 50%;
-                                line-height: 1.3em;
+                                
                                 .hover_boxes {
                                     color: white;
                                     font-family: 'Inter', sans-serif;
                                     font-weight: lighter;
                                     font-size: .8rem;
                                     // Make opacity 0
-                                    opacity: 0;
+                                    opacity: 1;
                                     margin: -2em 0 0 -2em;
+                                    line-height: 1.3em;
+                                    background-color: yellow;
                                 }
                                 // Make the boxes words appear
                                 // this will work for all queries 
@@ -478,7 +481,7 @@ $borderfont: #dad3d35b;
                                     font-weight: lighter;
                                     font-size: .8rem;
                                     // Make opacity 0
-                                    opacity: 0;
+                                    opacity: 1;
                                     margin: 0em 0 0 0;
                                 }
                                 // Make the boxes words appear
@@ -511,12 +514,13 @@ $borderfont: #dad3d35b;
                         // Make this fixed within window
                         display: flex;
                         // background-color: red;
+                        // gap: 3em;
                         margin: 2em 0 0 4em;
                         .logo_name {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            margin-top: 0em;
+                            width: 100%;
                             #lightbulb {
                                 width: 1em;
                                 height: 1em;
@@ -531,13 +535,17 @@ $borderfont: #dad3d35b;
                         // footer list
                         .footer_list {
                             display: flex;
-                            gap: 4em;
-                            margin: 1em 0 0 5em;
-                            margin: 1.5em 0 0 15em;
+                            gap: 5em;
+                            margin: 1em 0 0 3em;
+                            position: relative;
+                            left: 50px;
+                            // margin: 1.5em 0 0 15em;
+                            // background-color: #668CF6;
                             .footer_list_contents {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 1em;
+                                width: 15em;
                                 a {
                                     color: white;
                                     font-family: 'Inter', sans-serif;
@@ -545,24 +553,28 @@ $borderfont: #dad3d35b;
                                     text-decoration: none;
                                 }
                             }
-                            .footer_list_contents_two {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 1em;
-                                a {
-                                    color: white;
-                                    font-family: 'Inter', sans-serif;
-                                    font-size: .8rem;
-                                    text-decoration: none;
-                                }
-                            }
+                            // .footer_list_contents_two {
+                            //     display: flex;
+                            //     flex-direction: column;
+                            //     gap: 1em;
+                            //     a {
+                            //         color: white;
+                            //         font-family: 'Inter', sans-serif;
+                            //         font-size: .8rem;
+                            //         text-decoration: none;
+                            //     }
+                            // }
                         }
                     }
                     // Email Sign Up
                     .sign_up_div {
-                        margin: 3em 0 0 8em;
+                        // margin: 3em 0 0 4em;
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
+                        // align-items: center;
+                        position: relative;
+                        left: 7em;
                         gap: .5em;
                         small {
                             color: $bluetext;
@@ -574,7 +586,7 @@ $borderfont: #dad3d35b;
                             justify-content: center;
                             align-items: center;
                             input {
-                                background-color: $headerfont;
+                                background-color: $backgroundwhite;
                                 // background-color: #66C7E5;
                                 border-top-left-radius: 5px;
                                 border-bottom-left-radius: 5px;
@@ -585,16 +597,16 @@ $borderfont: #dad3d35b;
                                 border: none;
                             }
                             button {
-                                background-color: $bluetext;
+                                background-color: $backgroundwhite;
                                 border-top-left-radius: 0px;
                                 border-bottom-left-radius: 0px;
                                 border-top-right-radius: 5px;
                                 border-bottom-right-radius: 5px;
-                                color: black;
+                                color: $newnav;
                                 font-family: 'Inter', sans-serif;
                                 font-weight: bold;
                                 width: 10em;
-                                height: 3.1em;
+                                height: 3.15em;
                                 // border-radius: 0px;
                                 border: none;
                                 cursor: pointer;
@@ -608,9 +620,11 @@ $borderfont: #dad3d35b;
                 .connect_with {
                     display: flex;
                     flex-direction: column;
+                    display: flex;
+                    justify-content: center;
                     gap: .8em;
                     position: relative;
-                    left: 200px;
+                    left: 300px;
                     // margin: 3em 0 0 15em;
                     small {
                         color: white;
@@ -645,8 +659,11 @@ $borderfont: #dad3d35b;
                     // font-weight: bold;
                     gap: .5em;
                     // margin: 5em 0em 0 -80em;
-                    margin-top: 1em;
-                    margin-right: -9em;
+                    // margin-top: 1em;
+                    // margin-right: -9em;
+                    position: relative;
+                    top: 3em;
+                    // right: 7em;
                     #courdevelops {
                         width: 2em;
                         height: 2em;

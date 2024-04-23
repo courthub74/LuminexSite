@@ -306,7 +306,7 @@
     font-family: "Inter", sans-serif;
     font-weight: lighter;
     font-size: 0.8rem;
-    opacity: 0;
+    opacity: 1;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_one .words .hover_boxes.appear {
     opacity: 1;
@@ -330,7 +330,7 @@
     font-family: "Inter", sans-serif;
     font-weight: lighter;
     font-size: 0.8rem;
-    opacity: 0;
+    opacity: 1;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words .hover_boxes.appear {
     opacity: 1;
@@ -342,20 +342,22 @@
     align-items: center;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words {
+    background-color: #668CF6;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    line-height: 1.3em;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words .hover_boxes {
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: lighter;
     font-size: 0.8rem;
-    opacity: 0;
+    opacity: 1;
     margin: -2em 0 0 -2em;
+    line-height: 1.3em;
+    background-color: yellow;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words .hover_boxes.appear {
     opacity: 1;
@@ -379,7 +381,7 @@
     font-family: "Inter", sans-serif;
     font-weight: lighter;
     font-size: 0.8rem;
-    opacity: 0;
+    opacity: 1;
     margin: 0em 0 0 0;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words .hover_boxes.appear {
@@ -406,7 +408,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0em;
+    width: 100%;
   }
   body .luminex_page footer .top_footer_contents .co_name_logo .logo_name #lightbulb {
     width: 1em;
@@ -420,14 +422,16 @@
   }
   body .luminex_page footer .top_footer_contents .co_name_logo .footer_list {
     display: flex;
-    gap: 4em;
-    margin: 1em 0 0 5em;
-    margin: 1.5em 0 0 15em;
+    gap: 5em;
+    margin: 1em 0 0 3em;
+    position: relative;
+    left: 50px;
   }
   body .luminex_page footer .top_footer_contents .co_name_logo .footer_list .footer_list_contents {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 15em;
   }
   body .luminex_page footer .top_footer_contents .co_name_logo .footer_list .footer_list_contents a {
     color: white;
@@ -435,21 +439,12 @@
     font-size: 0.8rem;
     text-decoration: none;
   }
-  body .luminex_page footer .top_footer_contents .co_name_logo .footer_list .footer_list_contents_two {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  body .luminex_page footer .top_footer_contents .co_name_logo .footer_list .footer_list_contents_two a {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    text-decoration: none;
-  }
   body .luminex_page footer .top_footer_contents .sign_up_div {
-    margin: 3em 0 0 8em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 7em;
     gap: 0.5em;
   }
   body .luminex_page footer .top_footer_contents .sign_up_div small {
@@ -463,7 +458,7 @@
     align-items: center;
   }
   body .luminex_page footer .top_footer_contents .sign_up_div .email_input input {
-    background-color: #DAD3D3;
+    background-color: #F0F5FF;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0px;
@@ -473,25 +468,27 @@
     border: none;
   }
   body .luminex_page footer .top_footer_contents .sign_up_div .email_input button {
-    background-color: #66C7E5;
+    background-color: #F0F5FF;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: black;
+    color: #06183A;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     width: 10em;
-    height: 3.1em;
+    height: 3.15em;
     border: none;
     cursor: pointer;
   }
   body .luminex_page footer .connect_with {
     display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
     gap: 0.8em;
     position: relative;
-    left: 200px;
+    left: 300px;
   }
   body .luminex_page footer .connect_with small {
     color: white;
@@ -521,8 +518,8 @@
     font-size: small;
     font-family: "Inter", sans-serif;
     gap: 0.5em;
-    margin-top: 1em;
-    margin-right: -9em;
+    position: relative;
+    top: 3em;
   }
   body .luminex_page footer .copyrights #courdevelops {
     width: 2em;
