@@ -125,21 +125,16 @@
     background-color: #F0F5FF;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 5em;
-    gap: 3em;
     height: 120vh;
     width: 100%;
   }
   body .luminex_page .luminex_stuff .top_square {
-    width: 65em;
     width: 100%;
     height: 20em;
     display: flex;
     justify-content: center;
-    margin: 35em 0 0 0;
-    gap: 4em;
+    margin-top: 10em;
   }
   body .luminex_page .luminex_stuff .top_square .right_square {
     display: flex;
@@ -171,9 +166,8 @@
   }
   body .luminex_page .luminex_stuff .exec_summary {
     width: 100%;
-    margin-top: 1em;
     display: flex;
-    margin-top: 5em;
+    margin-top: 2em;
   }
   body .luminex_page .luminex_stuff .exec_summary .exec_words {
     width: 60%;
@@ -211,6 +205,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 2em 0 0 0;
   }
   body .luminex_page .luminex_stuff .ul_bulb ul {
     width: 85%;
@@ -225,168 +220,6 @@
     height: 2em;
     position: relative;
     right: 90px;
-  }
-  body .luminex_page .luminex_stuff #insight_section {
-    padding: 8em 0 0 0;
-    margin: -12em 0 0 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  body .luminex_page .luminex_stuff #insight_section p {
-    color: #06183A;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    position: relative;
-    top: 3em;
-    right: 45.5em;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-    gap: 1.8em;
-    gap: 4em;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights .square {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 21em;
-    height: 30em;
-    box-shadow: 1px 1px 1px grey;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights .square button {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    position: absolute;
-    background: none;
-    font-size: 1rem;
-    border: none;
-    margin: 3em 0 0 -7em;
-    cursor: pointer;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights .square button::before {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    height: 5px;
-    width: 105%;
-    background-color: #66C7E5;
-    opacity: 0;
-    margin: 0 0 0 0.4em;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights .square button:hover:before {
-    opacity: 1;
-    transition: 0.3s all ease-in;
-    z-index: 1;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_one {
-    background-image: url("./img/office_lights.png");
-    display: flex;
-    align-items: center;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_one .words {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    line-height: 1.3em;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_one .words .hover_boxes {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    font-size: 0.8rem;
-    opacity: 1;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_one .words .hover_boxes.appear {
-    opacity: 1;
-    transition: 0.3s all ease-in;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two {
-    background-image: url("./img/operations_light.png");
-    display: flex;
-    align-items: center;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    line-height: 1.3em;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words .hover_boxes {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    font-size: 0.8rem;
-    opacity: 1;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two .words .hover_boxes.appear {
-    opacity: 1;
-    transition: 0.3s all ease-in;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three {
-    background-image: url("./img/environ_light_one.png");
-    display: flex;
-    align-items: center;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words {
-    background-color: #668CF6;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words .hover_boxes {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    font-size: 0.8rem;
-    opacity: 1;
-    margin: -2em 0 0 -2em;
-    line-height: 1.3em;
-    background-color: yellow;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words .hover_boxes.appear {
-    opacity: 1;
-    transition: 0.3s all ease-in;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four {
-    background-image: url("./img/hand_light.png");
-    display: flex;
-    align-items: center;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    line-height: 1.3em;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words .hover_boxes {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: lighter;
-    font-size: 0.8rem;
-    opacity: 1;
-    margin: 0em 0 0 0;
-  }
-  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words .hover_boxes.appear {
-    opacity: 1;
-    transition: 0.3s all ease-in;
   }
   body .luminex_page footer {
     height: 17em;
