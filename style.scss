@@ -285,7 +285,7 @@ $borderfont: #dad3d35b;
                             align-items: center;
                             width: 20em;
                             height: 30em;
-                            background-color: #06183A;
+                            // background-color: #06183A;
                             box-shadow: 1px 1px 1px grey;
                             // border-radius: 20px;
                             button {
@@ -315,22 +315,49 @@ $borderfont: #dad3d35b;
                                 transition: .3s all ease-in;
                                 z-index: 1;
                             }
-                            #marketing {
-                                width: 21em;
-                                height: 27em;
-                                border-radius: 10px;
+                            // #marketing {
+                            //     width: 21em;
+                            //     height: 27em;
+                            //     border-radius: 10px;
                                 
-                            }
-                            #operations {
-                                width: 21em;
-                                height: 26.6em;
-                                margin-top: -.3em;
-                                border-radius: 10px;
-                            }
+                            // }
+                            // #operations {
+                            //     width: 21em;
+                            //     height: 26.6em;
+                            //     margin-top: -.3em;
+                            //     border-radius: 10px;
+                            // }
                         }
-                        // Each Square
+                        // Each Squares BACKGROUND and WORDS HOVER
                         #square_one {
                             background-image: url("./img/office_lights.png");
+                            display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                            // WORDS that appear upon hover
+                            .words {
+                                // background-color: #668CF6;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 60%;
+                                line-height: 1.3em;
+                                .hover_boxes {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: lighter;
+                                    font-size: .8rem;
+                                    // Make opacity 0
+                                    opacity: 0;
+                                }
+                                // Make the boxes words appear
+                                .hover_boxes.appear {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
+                                }
+                                
+                            }
                         }
                         #square_two {
                             background-image: url("./img/operations_one.png");
