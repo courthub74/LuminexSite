@@ -307,7 +307,9 @@ $borderfont: #dad3d35b;
                 height: 17em;
                 display: flex;
                 flex-direction: column;
-                margin: 20em 0 0 0;
+                // margin: 20em 0 0 0;
+                position: relative;
+                top: 30em;
                 background-color: $newnav;
                 .top_footer_contents {
                     display: flex;
