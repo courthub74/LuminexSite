@@ -137,7 +137,7 @@
     height: 20em;
     display: flex;
     justify-content: center;
-    margin: 30em 0 30px 0;
+    margin: 38em 0 30px 0;
     gap: 4em;
   }
   body .luminex_page .luminex_stuff .top_square .right_square {
@@ -171,6 +171,7 @@
   body .luminex_page .luminex_stuff .exec_summary {
     width: 100%;
     margin-top: 1em;
+    display: flex;
   }
   body .luminex_page .luminex_stuff .exec_summary .exec_words {
     width: 60%;
@@ -180,6 +181,22 @@
     line-height: 1.8em;
     font-size: 1rem;
     height: 80%;
+  }
+  body .luminex_page .luminex_stuff .exec_summary .led_one {
+    z-index: 1;
+  }
+  body .luminex_page .luminex_stuff .exec_summary .led_one #led_one {
+    border-radius: 50%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px #66C7E5;
+  }
+  body .luminex_page .luminex_stuff .exec_summary .led_two #led_two {
+    border-radius: 50%;
+    border-radius: 15px;
+    margin: -3em 0 0 -3em;
+    width: 15em;
+    height: 15em;
+    box-shadow: 2px 2px 2px 1px #66C7E5;
   }
   body .luminex_page .luminex_stuff #insight_section {
     padding: 8em 0 0 0;
@@ -222,7 +239,7 @@
     right: 0;
     height: 5px;
     width: 110%;
-    background-color: #668CF6;
+    background-color: #66C7E5;
     opacity: 0;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights .square button:hover:before {
@@ -244,7 +261,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 30em;
+    top: 35em;
     background-color: #06183A;
   }
   body .luminex_page footer .top_footer_contents {
