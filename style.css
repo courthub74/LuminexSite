@@ -128,6 +128,7 @@
     justify-content: center;
     align-items: center;
     gap: 5em;
+    gap: 3em;
     height: 120vh;
     width: 100%;
   }
@@ -137,7 +138,7 @@
     height: 20em;
     display: flex;
     justify-content: center;
-    margin: 38em 0 30px 0;
+    margin: 35em 0 0 0;
     gap: 4em;
   }
   body .luminex_page .luminex_stuff .top_square .right_square {
@@ -172,6 +173,7 @@
     width: 100%;
     margin-top: 1em;
     display: flex;
+    margin-top: 5em;
   }
   body .luminex_page .luminex_stuff .exec_summary .exec_words {
     width: 60%;
@@ -204,15 +206,43 @@
     filter: brightness(70%);
     box-shadow: 2px 2px 2px 2px #66C7E5;
   }
+  body .luminex_page .luminex_stuff .ul_bulb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  body .luminex_page .luminex_stuff .ul_bulb ul {
+    width: 85%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #06183A;
+    border: 0 none;
+  }
+  body .luminex_page .luminex_stuff .ul_bulb #bulb {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    right: 90px;
+  }
   body .luminex_page .luminex_stuff #insight_section {
     padding: 8em 0 0 0;
+    margin: -12em 0 0 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   body .luminex_page .luminex_stuff #insight_section p {
     color: #06183A;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    margin: 0 0 -3em 0.3em;
+    position: relative;
+    top: 3em;
+    right: 45.5em;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights {
     display: flex;
@@ -226,7 +256,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20em;
     width: 21em;
     height: 30em;
     box-shadow: 1px 1px 1px grey;

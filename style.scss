@@ -177,6 +177,7 @@ $borderfont: #dad3d35b;
                 justify-content: center;
                 align-items: center;
                 gap: 5em;
+                gap: 3em;
                 height: 120vh;
                 width: 100%;
                 // TOP SQUARE
@@ -187,7 +188,8 @@ $borderfont: #dad3d35b;
                     height: 20em;
                     display: flex;
                     justify-content: center;
-                    margin: 38em 0 30px 0;
+                    // margin: 38em 0 30px 0;
+                    margin: 35em 0 0 0;
                     // margin-top: 3em;
                     // border-radius: 10px;
                     gap: 4em;
@@ -230,7 +232,7 @@ $borderfont: #dad3d35b;
                    width: 100%;
                    margin-top: 1em;
                    display: flex;
-
+                   margin-top: 5em;
                    .exec_words {
                         width: 60%;
                         color: $newnav;
@@ -265,15 +267,48 @@ $borderfont: #dad3d35b;
                         }
                    }
                 }
+                // Line and Bulb
+                .ul_bulb {
+                    // background-color: #668CF6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    ul {
+                        width: 85%;
+                        height: 2px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-color: $newnav;
+                        border: 0 none;
+                    }
+                    #bulb {
+                        width: 2em;
+                        height: 2em;
+                        position: relative;
+                        right: 90px;
+                        // margin-left: -11em;
+                    }
+                }
                 // INSIGHTS
                 #insight_section {
                     padding: 8em 0 0 0;
+                    margin: -12em 0 0 0;
+                    // background-color: #668CF6;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     p {
                         color: $newnav;
                         font-family: 'Inter', sans-serif;
                         font-size: 1rem;
                         font-weight: bold;
-                        margin: 0 0 -3em .3em;
+                        // margin: 0 0 -3em .3em;
+                        position: relative;
+                        top: 3em;
+                        right: 45.5em;
                     }
                     .all_insights {
                         display: flex;
@@ -287,7 +322,7 @@ $borderfont: #dad3d35b;
                             flex-direction: column;
                             // justify-content: center;
                             align-items: center;
-                            width: 20em;
+                            // width: 20em;
                             width: 21em;
                             height: 30em;
                             // background-color: #06183A;
