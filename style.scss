@@ -307,7 +307,7 @@ $borderfont: #dad3d35b;
                         gap: 2em;
                         width: 100%;
                         height: 100%;
-                        background-color: blueviolet;
+                        // background-color: blueviolet;
                         // Each Square Sizing
                         .square {
                             display: flex;
@@ -326,6 +326,7 @@ $borderfont: #dad3d35b;
                                 font-size: 1rem;
                                 border: none;
                                 margin: 3em 0 0 -7em;
+                                // margin: 3em 0 0 0em;
                                 cursor: pointer;
                                 // background-color: yellow;
                             }
@@ -395,6 +396,37 @@ $borderfont: #dad3d35b;
                                     font-size: .8rem;
                                     // Make opacity 0
                                     opacity: 0;
+                                }
+                                // Make the boxes words appear
+                                // this will work for all queries 
+                                    // just query by ID in the js
+                                .hover_boxes.appear {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
+                                }
+                                
+                            }
+                        }
+                        #square_three {
+                            background-image: url("./img/environ_light_one.png");
+                            .words {
+                                // background-color: #668CF6;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 45%;
+                                line-height: 1.3em;
+                                // margin: 1.3em 0 0 0em;
+                                .hover_boxes {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: lighter;
+                                    font-size: .8rem;
+                                    // Make opacity 0
+                                    opacity: 0;
+                                    // margin: 2.5em 0 0 3em;
+                                    margin: -3em 0 0 -2.2em;
                                 }
                                 // Make the boxes words appear
                                 // this will work for all queries 
