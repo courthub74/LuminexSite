@@ -309,9 +309,53 @@
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_three {
     background-image: url("./img/environ_light_one.png");
+    display: flex;
+    align-items: center;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    line-height: 1.3em;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words .hover_boxes {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin: -2em 0 0 -2em;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three .words .hover_boxes.appear {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights #square_four {
     background-image: url("./img/hand_light.png");
+    display: flex;
+    align-items: center;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    line-height: 1.3em;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words .hover_boxes {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin: 0em 0 0 0;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four .words .hover_boxes.appear {
+    opacity: 1;
+    transition: 0.3s all ease-in;
   }
   body .luminex_page footer {
     height: 17em;

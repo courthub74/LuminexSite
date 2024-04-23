@@ -356,6 +356,7 @@ $borderfont: #dad3d35b;
                                 
                             }
                         }
+                        // Operations
                         #square_two {
                             background-image: url("./img/operations_light.png");
                             display: flex;
@@ -388,11 +389,72 @@ $borderfont: #dad3d35b;
                                 
                             }
                         }
+                        // Environmental
                         #square_three {
                             background-image: url("./img/environ_light_one.png");
+                            display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                            // WORDS that appear upon hover
+                            .words {
+                                // background-color: #668CF6;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 50%;
+                                line-height: 1.3em;
+                                .hover_boxes {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: lighter;
+                                    font-size: .8rem;
+                                    // Make opacity 0
+                                    opacity: 0;
+                                    margin: -2em 0 0 -2em;
+                                }
+                                // Make the boxes words appear
+                                // this will work for all queries 
+                                    // just query by ID in the js
+                                .hover_boxes.appear {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
+                                }
+                                
+                            }
                         }
                         #square_four {
                             background-image: url("./img/hand_light.png");
+                            display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                            // WORDS that appear upon hover
+                            .words {
+                                // background-color: #668CF6;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 60%;
+                                line-height: 1.3em;
+                                .hover_boxes {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: lighter;
+                                    font-size: .8rem;
+                                    // Make opacity 0
+                                    opacity: 0;
+                                    margin: 0em 0 0 0;
+                                }
+                                // Make the boxes words appear
+                                // this will work for all queries 
+                                    // just query by ID in the js
+                                .hover_boxes.appear {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
+                                }
+                                
+                            }
                         }
                     }
                 }
