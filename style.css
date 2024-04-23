@@ -188,15 +188,16 @@
   body .luminex_page .luminex_stuff .exec_summary .led_one #led_one {
     border-radius: 50%;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px 1px #66C7E5;
+    box-shadow: 1px 1px 1px 1px #F0F5FF;
   }
-  body .luminex_page .luminex_stuff .exec_summary .led_two #led_two {
+  body .luminex_page .luminex_stuff .exec_summary .led_two {
+    background-color: #06183A;
     border-radius: 50%;
     border-radius: 15px;
     margin: -3em 0 0 -3em;
     width: 15em;
     height: 15em;
-    box-shadow: 2px 2px 2px 1px #66C7E5;
+    box-shadow: 1px 1px 1px 1px #66C7E5;
   }
   body .luminex_page .luminex_stuff #insight_section {
     padding: 8em 0 0 0;
@@ -206,19 +207,23 @@
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    margin: 0 0 -3em 0.5em;
+    margin: 0 0 -3em 0em;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5em;
-    gap: 1em;
+    gap: 1.8em;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights .square {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20em;
+    height: 30em;
+    background-color: #06183A;
+    box-shadow: 1px 1px 1px grey;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights .square button {
     color: white;
@@ -250,11 +255,25 @@
   body .luminex_page .luminex_stuff #insight_section .all_insights .square #marketing {
     width: 21em;
     height: 27em;
+    border-radius: 10px;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights .square #operations {
     width: 21em;
     height: 26.6em;
     margin-top: -0.3em;
+    border-radius: 10px;
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_one {
+    background-image: url("./img/office_lights.png");
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_two {
+    background-image: url("./img/operations_one.png");
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_three {
+    background-image: url("./img/environ_light_one.png");
+  }
+  body .luminex_page .luminex_stuff #insight_section .all_insights #square_four {
+    background-image: url("./img/hand_light.png");
   }
   body .luminex_page footer {
     height: 17em;

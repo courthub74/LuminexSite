@@ -246,17 +246,19 @@ $borderfont: #dad3d35b;
                         #led_one {
                             border-radius: 50%;
                             border-radius: 15px;
-                            box-shadow: 2px 2px 2px 1px $bluetext;
+                            box-shadow: 1px 1px 1px 1px $backgroundwhite;
                         }
                    }
                    .led_two {
+                    background-color: $newnav;
+                    border-radius: 50%;
+                    border-radius: 15px;
+                    margin: -3em 0 0 -3em;
+                    width: 15em;
+                    height: 15em;
+                    box-shadow: 1px 1px 1px 1px $bluetext;
                         #led_two {
-                            border-radius: 50%;
-                            border-radius: 15px;
-                            margin: -3em 0 0 -3em;
-                            width: 15em;
-                            height: 15em;
-                            box-shadow: 2px 2px 2px 1px $bluetext;
+                            
                         }
                    }
                 }
@@ -268,19 +270,24 @@ $borderfont: #dad3d35b;
                         font-family: 'Inter', sans-serif;
                         font-size: 1rem;
                         font-weight: bold;
-                        margin: 0 0 -3em .5em;
+                        margin: 0 0 -3em 0em;
                     }
                     .all_insights {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         margin-top: 5em;
-                        gap: 1em;
+                        gap: 1.8em;
                         .square {
                             display: flex;
                             flex-direction: column;
                             // justify-content: center;
                             align-items: center;
+                            width: 20em;
+                            height: 30em;
+                            background-color: #06183A;
+                            box-shadow: 1px 1px 1px grey;
+                            // border-radius: 20px;
                             button {
                                 color: white;
                                 font-family: 'Inter', sans-serif;
@@ -311,12 +318,28 @@ $borderfont: #dad3d35b;
                             #marketing {
                                 width: 21em;
                                 height: 27em;
+                                border-radius: 10px;
+                                
                             }
                             #operations {
                                 width: 21em;
                                 height: 26.6em;
                                 margin-top: -.3em;
+                                border-radius: 10px;
                             }
+                        }
+                        // Each Square
+                        #square_one {
+                            background-image: url("./img/office_lights.png");
+                        }
+                        #square_two {
+                            background-image: url("./img/operations_one.png");
+                        }
+                        #square_three {
+                            background-image: url("./img/environ_light_one.png");
+                        }
+                        #square_four {
+                            background-image: url("./img/hand_light.png");
                         }
                     }
                 }
