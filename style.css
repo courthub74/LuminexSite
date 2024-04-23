@@ -212,7 +212,7 @@
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    margin: 0 0 -3em 0em;
+    margin: 0 0 -3em 0.3em;
   }
   body .luminex_page .luminex_stuff #insight_section .all_insights {
     display: flex;
