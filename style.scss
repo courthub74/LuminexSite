@@ -230,18 +230,19 @@ $borderfont: #dad3d35b;
                    width: 100%;
                    margin-top: 1em;
                    display: flex;
-                //    background-color: darkcyan;
+
                    .exec_words {
                         width: 60%;
                         color: $newnav;
                         font-family: 'Inter', sans-serif;
-                        margin: 0em 0 0 5em;
+                        margin: 0em 0 0 5.5em;
                         line-height: 1.8em;
                         font-size: 1rem;
                         height: 80%;
                         // background-color: #668CF6;
                    }
                    .led_one {
+                    margin: 0 0 0 3em;
                     z-index: 1;
                         #led_one {
                             border-radius: 50%;
@@ -280,12 +281,14 @@ $borderfont: #dad3d35b;
                         align-items: center;
                         margin-top: 5em;
                         gap: 1.8em;
+                        gap: 4em;
                         .square {
                             display: flex;
                             flex-direction: column;
                             // justify-content: center;
                             align-items: center;
                             width: 20em;
+                            width: 21em;
                             height: 30em;
                             // background-color: #06183A;
                             box-shadow: 1px 1px 1px grey;
@@ -319,18 +322,6 @@ $borderfont: #dad3d35b;
                                 transition: .3s all ease-in;
                                 z-index: 1;
                             }
-                            // #marketing {
-                            //     width: 21em;
-                            //     height: 27em;
-                            //     border-radius: 10px;
-                                
-                            // }
-                            // #operations {
-                            //     width: 21em;
-                            //     height: 26.6em;
-                            //     margin-top: -.3em;
-                            //     border-radius: 10px;
-                            // }
                         }
                         // Each Squares BACKGROUND and WORDS HOVER
                         #square_one {
