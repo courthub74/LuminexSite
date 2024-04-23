@@ -346,6 +346,29 @@
     opacity: 1;
     transition: 0.3s all ease-in;
   }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_four {
+    background-image: url("./img/hand_light.png");
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_four .words {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    line-height: 1.3em;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_four .words .hover_boxes {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin: 1.5em 0 0 -1.4em;
+  }
+  body .luminex_page .luminex_stuff .insight_section .all_insights #square_four .words .hover_boxes.appear {
+    opacity: 1;
+    transition: 0.3s all ease-in;
+  }
   body .luminex_page footer {
     height: 50em;
     display: flex;
@@ -459,12 +482,12 @@
     gap: 1.8em;
   }
   body .luminex_page footer .connect_with .socials #twitter {
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.5em;
+    height: 1.5em;
   }
   body .luminex_page footer .connect_with .socials .soc_icon {
-    width: 2em;
-    height: 2em;
+    width: 1.8em;
+    height: 1.8em;
   }
   body .luminex_page footer .copyrights {
     display: flex;

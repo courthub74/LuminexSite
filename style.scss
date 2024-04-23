@@ -293,7 +293,7 @@ $borderfont: #dad3d35b;
                     align-items: center;
                     width: 90%;
                     height: 100%;
-                    // margin-top: -10em;
+                    // margin-top: -5em;
                     .insight_title {
                         font-family: 'Inter', sans-serif;
                         color: $newnav;
@@ -427,6 +427,37 @@ $borderfont: #dad3d35b;
                                     opacity: 0;
                                     // margin: 2.5em 0 0 3em;
                                     margin: -3em 0 0 -2.2em;
+                                }
+                                // Make the boxes words appear
+                                // this will work for all queries 
+                                    // just query by ID in the js
+                                .hover_boxes.appear {
+                                    opacity: 1;
+                                    transition: .3s all ease-in;
+                                }
+                                
+                            }
+                        }
+                        #square_four {
+                            background-image: url("./img/hand_light.png");
+                            .words {
+                                // background-color: #668CF6;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 45%;
+                                line-height: 1.3em;
+                                // margin: 1.3em 0 0 0em;
+                                .hover_boxes {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: lighter;
+                                    font-size: .8rem;
+                                    // Make opacity 0
+                                    opacity: 0;
+                                    // margin: 2.5em 0 0 3em;
+                                    margin: 1.5em 0 0 -1.4em;
                                 }
                                 // Make the boxes words appear
                                 // this will work for all queries 
@@ -581,12 +612,12 @@ $borderfont: #dad3d35b;
                         justify-content: center;
                         gap: 1.8em;
                         #twitter {
-                            width: 1.8em;
-                            height: 1.8em;
+                            width: 1.5em;
+                            height: 1.5em;
                         }
                         .soc_icon {
-                            width: 2em;
-                            height: 2em;
+                            width: 1.8em;
+                            height: 1.8em;
                         }
                         
                     }
